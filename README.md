@@ -22,3 +22,6 @@ This is a **full-stack finance management website** designed to help users track
 - **Backend**: Python(Flask)
 - **Database**: MySQL
 - **File Handling**: Python for PDF extraction and database interaction
+
+### 📄 License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
