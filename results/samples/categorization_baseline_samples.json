@@ -1,0 +1,52 @@
+[
+  {
+    "description": "KAISER PERMANENTE SAN JOSE CA",
+    "true": "health",
+    "keyword_pred": "other"
+  },
+  {
+    "description": "con edison",
+    "true": "utilities",
+    "keyword_pred": "other"
+  },
+  {
+    "description": "ENTERPRISE RENT-A-CAR",
+    "true": "transport",
+    "keyword_pred": "rent"
+  },
+  {
+    "description": "PLAYSTATION NTWK NEW YORK NY",
+    "true": "entertainment",
+    "keyword_pred": "other"
+  },
+  {
+    "description": "SQ *TAQUERIA SEATTLE WA",
+    "true": "dining",
+    "keyword_pred": "other"
+  },
+  {
+    "description": "exxonmobil seattle wa",
+    "true": "transport",
+    "keyword_pred": "other"
+  },
+  {
+    "description": "REALPAGE PMT",
+    "true": "rent",
+    "keyword_pred": "other"
+  },
+  {
+    "description": "trader joe's",
+    "true": "groceries",
+    "keyword_pred": "other"
+  },
+  {
+    "description": "TST* NATIONAL GRID SEATTLE WA",
+    "true": "utilities",
+    "keyword_pred": "other"
+  },
+  {
+    "description": "DEBIT CARD SCE&G AUSTIN TX",
+    "true": "utilities",
+    "keyword_pred": "other"
+  }
+]

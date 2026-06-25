@@ -1,3 +1,12 @@
 __pycache__/
 new_sample_bill.pdf
 .env
+.venv/
+venv/
+temp/
+extracted_text.txt
+models/
+*.joblib
+*.pt
+*.bin
+.DS_Store

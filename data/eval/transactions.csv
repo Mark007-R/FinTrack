@@ -1,0 +1,601 @@
+id,description,amount,date,category
+0,pos debit steam games austin tx,-39.51,2025-01-01,entertainment
+1,ACH TST* CAFE ROUGE,-30.87,2025-01-02,dining
+2,KAISER PERMANENTE SAN JOSE CA,-317.67,2025-01-02,health
+3,con edison,-128.09,2025-01-03,utilities
+4,APARTMENT LEASE PMT,-1332.04,2025-01-05,rent
+5,ach best buy,-352.34,2025-01-05,shopping
+6,PIZZA HUT,-79.47,2025-01-05,dining
+7,SAFEWAY STORE 1672,-89.2,2025-01-05,groceries
+8,mta subway san jose ca,-6.93,2025-01-05,transport
+9,RENT - APT 4B NEW YORK NY,-1563.1,2025-01-06,rent
+10,TST* AMC THEATRES,-28.21,2025-01-08,entertainment
+11,macy's san jose ca,-483.39,2025-01-08,shopping
+12,ENTERPRISE RENT-A-CAR,-58.87,2025-01-10,transport
+13,TST* MACY'S NEW YORK NY,-595.73,2025-01-11,shopping
+14,UBER EATS,-15.66,2025-01-13,dining
+15,Apple Store #9309,-342.78,2025-01-14,shopping
+16,ach irs tax refund,4532.15,2025-01-14,income
+17,dr smith dds,-79.42,2025-01-15,health
+18,EQUITY RESIDENTIAL,-1976.95,2025-01-16,rent
+19,aldi,-8.28,2025-01-18,groceries
+20,PLAYSTATION NTWK NEW YORK NY,-45.13,2025-01-19,entertainment
+21,PIZZA HUT,-46.52,2025-01-19,dining
+22,SQ *TAQUERIA SEATTLE WA,-45.24,2025-01-21,dining
+23,exxonmobil seattle wa,-89.5,2025-01-23,transport
+24,SPOTIFY,-54.34,2025-01-23,entertainment
+25,debit card gofundme donation,-289.61,2025-01-25,other
+26,76 GAS,-15.59,2025-01-25,transport
+27,REALPAGE PMT,-1753.2,2025-01-25,rent
+28,trader joe's,-169.62,2025-01-25,groceries
+29,TST* NATIONAL GRID SEATTLE WA,-45.2,2025-01-26,utilities
+30,BEST BUY AUSTIN TX,-576.67,2025-01-28,shopping
+31,ebay austin tx,-478.14,2025-02-02,shopping
+32,DEBIT CARD LYFT RIDE,-114.28,2025-02-04,transport
+33,whole foods mkt,-111.61,2025-02-06,groceries
+34,DEBIT CARD SCE&G AUSTIN TX,-49.53,2025-02-08,utilities
+35,chipotle,-15.48,2025-02-10,dining
+36,Lyft Ride 1100 Id,-86.98,2025-02-10,transport
+37,ACH SPOTIFY STORE 8665,-5.83,2025-02-10,entertainment
+38,WHOLE FOODS MKT,-167.19,2025-02-10,groceries
+39,tst* spectrum #2440,-95.2,2025-02-10,utilities
+40,kroger new york ny,-100.11,2025-02-11,groceries
+41,SPOTIFY 3138 ID,-36.47,2025-02-11,entertainment
+42,APPLE STORE,-435.41,2025-02-11,shopping
+43,DIVIDEND VANGUARD,414.87,2025-02-13,income
+44,Debit Card Con Edison Seattle Wa,-25.5,2025-02-13,utilities
+45,COSTCO WHSE,-58.49,2025-02-13,groceries
+46,DEBIT CARD WIRE TRANSFER 8383 ID,-472.53,2025-02-14,other
+47,ACH BANK FEE SEATTLE WA,-350.39,2025-02-14,other
+48,POS DEBIT ZELLE FROM J DOE #1013,1796.58,2025-02-15,income
+49,xbox live,-10.65,2025-02-17,entertainment
+50,target,-376.28,2025-02-19,shopping
+51,pizza hut austin tx,-70.86,2025-02-19,dining
+52,ALDI SEATTLE WA,-134.07,2025-02-20,groceries
+53,HOME DEPOT,-441.54,2025-02-21,shopping
+54,tst* ebay,-517.28,2025-02-23,shopping
+55,PIZZA HUT,-41.06,2025-02-24,dining
+56,sq *chipotle,-42.88,2025-02-26,dining
+57,ikea seattle wa,-312.9,2025-02-26,shopping
+58,City Gas Co Seattle Wa,-48.56,2025-02-28,utilities
+59,delta air new york ny,-63.67,2025-03-02,transport
+60,trader joe's,-65.22,2025-03-02,groceries
+61,DEBIT CARD COSTCO WHSE,-41.24,2025-03-02,groceries
+62,purchase sce&g san jose ca,-140.03,2025-03-02,utilities
+63,pos debit lyft ride san jose ca,-72.17,2025-03-03,transport
+64,Doordash,-10.12,2025-03-05,dining
+65,comcast xfinity,-144.18,2025-03-07,utilities
+66,uber eats,-5.44,2025-03-08,dining
+67,PURCHASE GREYSTAR PROPERTY,-1270.05,2025-03-09,rent
+68,CHEVRON,-10.17,2025-03-10,transport
+69,sq *ikea,-319.52,2025-03-11,shopping
+70,UBER TRIP,-39.1,2025-03-13,transport
+71,TST* ETSY #4797,-290.44,2025-03-13,shopping
+72,AMTRAK,-65.65,2025-03-13,transport
+73,Wire Transfer,-37.3,2025-03-13,other
+74,DELTA AIR,-41.66,2025-03-13,transport
+75,CHIPOTLE AUSTIN TX,-33.22,2025-03-15,dining
+76,sq *equity residential,-3079.58,2025-03-16,rent
+77,Mta Subway,-5.57,2025-03-16,transport
+78,walmart supercenter seattle wa,-92.15,2025-03-16,groceries
+79,ticketmaster,-78.5,2025-03-18,entertainment
+80,COSTCO WHSE #8506,-133.02,2025-03-19,groceries
+81,POS DEBIT WALMART SUPERCENTER #7640,-16.96,2025-03-19,groceries
+82,sq *quest diagnostics san jose ca,-43.28,2025-03-21,health
+83,ETSY SAN JOSE CA,-151.62,2025-03-22,shopping
+84,SQ *UBER EATS SAN JOSE CA,-79.16,2025-03-24,dining
+85,LYFT RIDE,-24.82,2025-03-26,transport
+86,Debit Card Kroger Seattle Wa,-39.71,2025-03-26,groceries
+87,ATM WITHDRAWAL,-214.6,2025-03-28,other
+88,ACH DIRECT DEP - ACME CORP #4138,4331.24,2025-04-01,income
+89,amtrak #5248,-21.11,2025-04-01,transport
+90,Disney Plus,-25.84,2025-04-02,entertainment
+91,CHIPOTLE #1921,-43.9,2025-04-04,dining
+92,ACH OPTUM RX,-391.49,2025-04-05,health
+93,PANERA BREAD STORE 1066,-61.7,2025-04-06,dining
+94,SQ *TST* CAFE ROUGE 6927 ID,-31.37,2025-04-06,dining
+95,Venmo Cashout,1486.84,2025-04-07,income
+96,Purchase Spotify,-42.73,2025-04-08,entertainment
+97,ach national grid,-267.45,2025-04-08,utilities
+98,POS DEBIT ETSY,-580.86,2025-04-09,shopping
+99,VERIZON WIRELESS,-226.52,2025-04-10,utilities
+100,NOTARY SERVICE,-22.62,2025-04-12,other
+101,HOME DEPOT,-113.67,2025-04-12,shopping
+102,GROCERY OUTLET,-146.87,2025-04-13,groceries
+103,ALDI,-89.76,2025-04-14,groceries
+104,amtrak store 5454,-66.25,2025-04-16,transport
+105,QUEST DIAGNOSTICS,-350.29,2025-04-16,health
+106,DUKE ENERGY 6870 ID,-97.19,2025-04-17,utilities
+107,TST* COMCAST XFINITY,-167.84,2025-04-17,utilities
+108,TRADER JOE'S SAN JOSE CA,-102.58,2025-04-17,groceries
+109,SAFEWAY #8266,-73.18,2025-04-19,groceries
+110,POS DEBIT ETSY,-141.45,2025-04-21,shopping
+111,misc debit,-40.45,2025-04-21,other
+112,DEBIT CARD SAFEWAY,-53.77,2025-04-23,groceries
+113,Zara Seattle Wa,-173.81,2025-04-24,shopping
+114,Best Buy,-225.2,2025-04-25,shopping
+115,sq *sce&g,-85.12,2025-04-25,utilities
+116,BP# SAN JOSE CA,-87.44,2025-04-25,transport
+117,Kaiser Permanente 3146 Id,-191.82,2025-04-27,health
+118,SQ *APPLE STORE #3258,-72.33,2025-04-27,shopping
+119,HBO MAX AUSTIN TX,-58.16,2025-05-01,entertainment
+120,Sq *Taqueria,-42.82,2025-05-02,dining
+121,Pos Debit Tesco,-162.42,2025-05-04,groceries
+122,hbo max store 6868,-58.5,2025-05-06,entertainment
+123,SPROUTS FARMERS MKT,-109.36,2025-05-06,groceries
+124,LANDLORD ACH NEW YORK NY,-1653.95,2025-05-06,rent
+125,AMAZON.COM,-484.76,2025-05-07,shopping
+126,TST* EXXONMOBIL,-109.0,2025-05-07,transport
+127,POS DEBIT VENMO PAYMENT STORE 6028,-462.99,2025-05-07,other
+128,STARBUCKS #4707,-34.56,2025-05-09,dining
+129,Gofundme Donation,-323.94,2025-05-10,other
+130,BEST BUY,-588.81,2025-05-12,shopping
+131,ALDI,-44.94,2025-05-14,groceries
+132,Debit Card Walgreens Seattle Wa,-387.11,2025-05-15,health
+133,CON EDISON AUSTIN TX,-32.79,2025-05-17,utilities
+134,Enterprise Rent-A-Car San Jose Ca,-30.97,2025-05-19,transport
+135,DOORDASH,-73.51,2025-05-21,dining
+136,PURCHASE TRADER JOE'S,-85.83,2025-05-22,groceries
+137,PURCHASE ZARA,-221.18,2025-05-24,shopping
+138,POS DEBIT WIRE TRANSFER,-20.88,2025-05-25,other
+139,exxonmobil,-111.83,2025-05-25,transport
+140,STARBUCKS NEW YORK NY,-19.84,2025-05-26,dining
+141,ach city gas co,-56.59,2025-05-28,utilities
+142,enterprise rent-a-car,-6.39,2025-06-01,transport
+143,TRADER JOE'S 4477 ID,-72.84,2025-06-03,groceries
+144,EXXONMOBIL,-85.0,2025-06-05,transport
+145,walmart supercenter san jose ca,-140.23,2025-06-07,groceries
+146,PAYROLL DEPOSIT,227.98,2025-06-09,income
+147,TST* DUKE ENERGY #9225,-76.74,2025-06-09,utilities
+148,MACY'S NEW YORK NY,-88.79,2025-06-10,shopping
+149,spotify seattle wa,-18.58,2025-06-12,entertainment
+150,HOME DEPOT,-519.05,2025-06-14,shopping
+151,comcast xfinity,-210.99,2025-06-15,utilities
+152,VENMO PAYMENT 4802 ID,-95.26,2025-06-15,other
+153,EBAY SEATTLE WA,-535.97,2025-06-15,shopping
+154,DUNKIN,-84.38,2025-06-15,dining
+155,BP#,-100.2,2025-06-15,transport
+156,pos debit aldi,-59.93,2025-06-15,groceries
+157,DEBIT CARD ZELLE FROM J DOE,1077.21,2025-06-15,income
+158,HBO MAX,-27.84,2025-06-15,entertainment
+159,WHOLE FOODS MKT,-167.37,2025-06-17,groceries
+160,CHECK #1042 SAN JOSE CA,-200.45,2025-06-17,other
+161,tst* cafe rouge #1549,-35.47,2025-06-18,dining
+162,PAYROLL DEPOSIT,834.7,2025-06-19,income
+163,SQ *OPTUM RX STORE 3474,-319.44,2025-06-21,health
+164,Chipotle,-59.59,2025-06-22,dining
+165,PURCHASE ATM WITHDRAWAL,-477.56,2025-06-24,other
+166,duke energy austin tx,-179.62,2025-06-26,utilities
+167,ach dr smith dds,-58.73,2025-06-27,health
+168,at&t,-133.67,2025-07-01,utilities
+169,greystar property,-1681.84,2025-07-02,rent
+170,RITE AID,-414.49,2025-07-03,health
+171,ATM WITHDRAWAL #8555,-472.36,2025-07-05,other
+172,KROGER,-101.85,2025-07-06,groceries
+173,DEBIT CARD SAFEWAY,-56.04,2025-07-06,groceries
+174,HBO MAX #6973,-70.7,2025-07-07,entertainment
+175,water dist,-66.38,2025-07-07,utilities
+176,Dunkin,-72.73,2025-07-08,dining
+177,ETSY,-213.78,2025-07-10,shopping
+178,steam games,-25.52,2025-07-11,entertainment
+179,UBER TRIP,-65.82,2025-07-13,transport
+180,gnc live well store 877,-409.52,2025-07-13,health
+181,SQ *DOORDASH,-8.6,2025-07-14,dining
+182,DEBIT CARD REALPAGE PMT,-793.53,2025-07-14,rent
+183,MCDONALD'S,-48.61,2025-07-14,dining
+184,NETFLIX,-8.49,2025-07-16,entertainment
+185,Sq *Safeway #8851,-20.36,2025-07-16,groceries
+186,pos debit zillow rental,-2112.65,2025-07-18,rent
+187,Tst* Kroger,-13.14,2025-07-19,groceries
+188,BANK FEE #9756,-268.77,2025-07-19,other
+189,ach landlord ach,-1727.1,2025-07-20,rent
+190,chipotle,-53.33,2025-07-22,dining
+191,kroger,-89.37,2025-07-24,groceries
+192,PG&E,-267.84,2025-07-25,utilities
+193,misc debit,-175.98,2025-07-25,other
+194,GROCERY OUTLET,-140.02,2025-07-26,groceries
+195,zara,-519.46,2025-07-26,shopping
+196,Tesco,-12.25,2025-07-26,groceries
+197,Debit Card Macy'S New York Ny,-254.52,2025-07-28,shopping
+198,SHELL OIL,-9.11,2025-08-02,transport
+199,DR SMITH DDS,-321.09,2025-08-04,health
+200,bank fee 8043 id,-367.7,2025-08-04,other
+201,ach comcast xfinity,-219.77,2025-08-06,utilities
+202,costco whse 3014 id,-121.5,2025-08-08,groceries
+203,GNC LIVE WELL AUSTIN TX,-182.76,2025-08-09,health
+204,walmart supercenter,-177.78,2025-08-10,groceries
+205,DISNEY PLUS,-14.62,2025-08-10,entertainment
+206,pos debit con edison,-150.46,2025-08-11,utilities
+207,COSTCO WHSE,-127.39,2025-08-13,groceries
+208,PUBLIX,-168.62,2025-08-13,groceries
+209,OLIVE GARDEN,-86.78,2025-08-14,dining
+210,DISNEY PLUS SAN JOSE CA,-65.63,2025-08-16,entertainment
+211,ticketmaster,-47.47,2025-08-16,entertainment
+212,hulu,-59.31,2025-08-16,entertainment
+213,POS DEBIT SPOTIFY,-10.96,2025-08-16,entertainment
+214,ACH REGAL CINEMAS,-11.04,2025-08-18,entertainment
+215,spectrum,-136.21,2025-08-20,utilities
+216,TARGET #2504,-89.88,2025-08-20,shopping
+217,HULU,-44.83,2025-08-21,entertainment
+218,DEBIT CARD BEST BUY NEW YORK NY,-15.86,2025-08-23,shopping
+219,Target,-80.83,2025-08-24,shopping
+220,POS DEBIT ZARA NEW YORK NY,-286.16,2025-08-26,shopping
+221,atm withdrawal,-457.45,2025-08-27,other
+222,cvs/pharmacy seattle wa,-102.16,2025-08-28,health
+223,dunkin,-26.27,2025-09-02,dining
+224,TST* CON EDISON AUSTIN TX,-260.74,2025-09-02,utilities
+225,tst* cafe rouge austin tx,-32.28,2025-09-02,dining
+226,WHOLE FOODS MKT,-87.58,2025-09-02,groceries
+227,SCE&G,-38.85,2025-09-03,utilities
+228,PG&E,-122.03,2025-09-03,utilities
+229,PURCHASE PARKING METER,-102.34,2025-09-05,transport
+230,Pg&E,-256.07,2025-09-07,utilities
+231,Stripe Payout,1717.13,2025-09-07,income
+232,ACH BEST BUY 1960 ID,-291.15,2025-09-07,shopping
+233,Wayfair,-460.33,2025-09-08,shopping
+234,ONE MEDICAL,-354.33,2025-09-08,health
+235,Tst* Notary Service Austin Tx,-393.57,2025-09-08,other
+236,Purchase 76 Gas,-18.9,2025-09-08,transport
+237,BEST BUY,-281.71,2025-09-09,shopping
+238,ebay new york ny,-384.84,2025-09-09,shopping
+239,Zara,-38.08,2025-09-09,shopping
+240,city gas co,-249.54,2025-09-11,utilities
+241,SQ *PUBLIX SEATTLE WA,-57.23,2025-09-11,groceries
+242,TST* ZELLE FROM J DOE,4279.95,2025-09-12,income
+243,ticketmaster,-49.26,2025-09-12,entertainment
+244,Optum Rx,-324.9,2025-09-12,health
+245,dunkin,-68.47,2025-09-12,dining
+246,BANK FEE,-121.59,2025-09-14,other
+247,bp#,-29.56,2025-09-15,transport
+248,dr smith dds,-427.56,2025-09-16,health
+249,TARGET #1735,-287.37,2025-09-16,shopping
+250,PURCHASE GRUBHUB SAN JOSE CA,-41.42,2025-09-18,dining
+251,safeway 4355 id,-43.85,2025-09-18,groceries
+252,zelle from j doe,2013.52,2025-09-19,income
+253,sq *rite aid san jose ca,-342.59,2025-09-21,health
+254,PG&E,-89.65,2025-09-22,utilities
+255,SPOTIFY,-17.07,2025-09-23,entertainment
+256,KAISER PERMANENTE,-73.2,2025-09-24,health
+257,purchase ebay,-476.57,2025-09-25,shopping
+258,OLIVE GARDEN,-77.35,2025-09-25,dining
+259,TRADER JOE'S,-113.26,2025-09-25,groceries
+260,SPOTIFY,-60.89,2025-09-26,entertainment
+261,pos debit lyft ride,-63.92,2025-09-26,transport
+262,PURCHASE OLIVE GARDEN 2124 ID,-59.19,2025-09-28,dining
+263,Cvs/Pharmacy New York Ny,-61.51,2025-09-28,health
+264,BP#,-65.23,2025-09-28,transport
+265,Publix,-142.93,2025-10-01,groceries
+266,MACY'S SAN JOSE CA,-29.36,2025-10-02,shopping
+267,POS DEBIT LYFT RIDE 211 ID,-45.22,2025-10-04,transport
+268,POS DEBIT TESCO NEW YORK NY,-68.38,2025-10-06,groceries
+269,Equity Residential,-2047.37,2025-10-08,rent
+270,xbox live,-16.75,2025-10-09,entertainment
+271,SPROUTS FARMERS MKT STORE 2109,-18.66,2025-10-10,groceries
+272,CHIPOTLE STORE 5730,-51.94,2025-10-11,dining
+273,disney plus,-61.94,2025-10-11,entertainment
+274,starbucks new york ny,-89.67,2025-10-13,dining
+275,doordash,-31.16,2025-10-15,dining
+276,BP# #7813,-33.64,2025-10-15,transport
+277,playstation ntwk,-5.57,2025-10-16,entertainment
+278,USPS POSTAGE,-128.33,2025-10-16,other
+279,tesco new york ny,-93.89,2025-10-16,groceries
+280,Parking Meter Seattle Wa,-88.52,2025-10-18,transport
+281,purchase kroger,-179.29,2025-10-20,groceries
+282,CVS/PHARMACY #9779,-188.96,2025-10-21,health
+283,ACH DR SMITH DDS AUSTIN TX,-329.48,2025-10-23,health
+284,panera bread san jose ca,-13.5,2025-10-23,dining
+285,STARBUCKS 5981 ID,-21.02,2025-10-24,dining
+286,pos debit realpage pmt san jose ca,-2030.05,2025-10-26,rent
+287,Pizza Hut #2553,-7.95,2025-10-28,dining
+288,purchase one medical new york ny,-285.87,2025-10-28,health
+289,sq *bp# #5051,-22.7,2025-11-01,transport
+290,76 gas,-76.64,2025-11-03,transport
+291,HOME DEPOT #5157,-477.43,2025-11-05,shopping
+292,wire transfer #2150,-93.26,2025-11-05,other
+293,KAISER PERMANENTE #4200,-106.14,2025-11-06,health
+294,PURCHASE BANK FEE,-74.01,2025-11-06,other
+295,POS DEBIT WALMART SUPERCENTER AUSTIN TX,-29.14,2025-11-06,groceries
+296,NETFLIX STORE 9863,-53.79,2025-11-07,entertainment
+297,MCDONALD'S NEW YORK NY,-54.59,2025-11-07,dining
+298,ONE MEDICAL STORE 5844,-34.88,2025-11-08,health
+299,TICKETMASTER 7367 ID,-45.58,2025-11-09,entertainment
+300,AMAZON.COM,-351.88,2025-11-09,shopping
+301,TST* KROGER 6390 ID,-101.96,2025-11-11,groceries
+302,GRUBHUB #7218,-62.55,2025-11-11,dining
+303,Nike Store,-89.43,2025-11-13,shopping
+304,Pos Debit Doordash Seattle Wa,-67.95,2025-11-15,dining
+305,exxonmobil store 6337,-73.86,2025-11-16,transport
+306,AVALON COMMUNITIES,-2260.25,2025-11-16,rent
+307,NETFLIX,-74.53,2025-11-16,entertainment
+308,TRADER JOE'S,-168.68,2025-11-16,groceries
+309,tst* kroger 9885 id,-121.31,2025-11-16,groceries
+310,H-E-B,-105.36,2025-11-18,groceries
+311,Netflix 4969 Id,-37.01,2025-11-18,entertainment
+312,Kroger,-151.85,2025-11-19,groceries
+313,KAISER PERMANENTE,-98.83,2025-11-21,health
+314,DUNKIN,-47.32,2025-11-22,dining
+315,usps postage,-159.7,2025-11-24,other
+316,USPS POSTAGE #8741,-489.94,2025-11-26,other
+317,delta air new york ny,-31.81,2025-11-26,transport
+318,APPLE STORE,-166.83,2025-11-27,shopping
+319,PAYROLL DEPOSIT,4540.61,2025-12-01,income
+320,PURCHASE USPS POSTAGE,-212.98,2025-12-01,other
+321,APPLE STORE #3655,-467.61,2025-12-01,shopping
+322,PANERA BREAD,-30.47,2025-12-02,dining
+323,zara new york ny,-355.68,2025-12-04,shopping
+324,City Gas Co,-214.21,2025-12-04,utilities
+325,debit card greystar property 3629 id,-952.84,2025-12-04,rent
+326,ETSY,-403.91,2025-12-04,shopping
+327,Aldi,-149.29,2025-12-06,groceries
+328,home depot #9961,-469.15,2025-12-06,shopping
+329,PLAYSTATION NTWK #5491,-19.24,2025-12-08,entertainment
+330,MTA SUBWAY 3944 ID,-64.65,2025-12-10,transport
+331,PANERA BREAD,-38.69,2025-12-10,dining
+332,city gas co,-269.92,2025-12-12,utilities
+333,TST* PANERA BREAD,-48.76,2025-12-12,dining
+334,PANERA BREAD AUSTIN TX,-64.47,2025-12-12,dining
+335,avalon communities san jose ca,-2534.58,2025-12-14,rent
+336,pos debit doordash san jose ca,-40.9,2025-12-16,dining
+337,HBO MAX STORE 8455,-78.96,2025-12-16,entertainment
+338,POS DEBIT GNC LIVE WELL,-28.59,2025-12-16,health
+339,STEAM GAMES,-58.31,2025-12-17,entertainment
+340,bp#,-78.97,2025-12-18,transport
+341,TRADER JOE'S,-39.56,2025-12-19,groceries
+342,POS DEBIT WALMART SUPERCENTER,-129.06,2025-12-20,groceries
+343,SQ *CITY GAS CO,-78.59,2025-12-20,utilities
+344,PUBLIX SEATTLE WA,-21.86,2025-12-21,groceries
+345,DUNKIN NEW YORK NY,-18.76,2025-12-21,dining
+346,PANERA BREAD,-12.54,2025-12-21,dining
+347,WALMART SUPERCENTER,-56.77,2025-12-23,groceries
+348,ACH PG&E,-192.46,2025-12-23,utilities
+349,sq *taqueria san jose ca,-56.72,2025-12-24,dining
+350,ZARA,-588.66,2025-12-26,shopping
+351,Misc Debit #5190,-458.56,2025-12-26,other
+352,Tst* Cafe Rouge,-27.75,2025-12-28,dining
+353,ATM WITHDRAWAL,-263.29,2025-01-02,other
+354,ach macy's,-312.08,2025-01-04,shopping
+355,amc theatres austin tx,-37.4,2025-01-05,entertainment
+356,TST* T-MOBILE,-151.34,2025-01-05,utilities
+357,ATM WITHDRAWAL,-162.26,2025-01-05,other
+358,Grocery Outlet,-59.53,2025-01-06,groceries
+359,IKEA #2589,-161.01,2025-01-08,shopping
+360,Venmo Payment,-353.58,2025-01-10,other
+361,EXXONMOBIL,-27.92,2025-01-10,transport
+362,SHELL OIL,-100.86,2025-01-12,transport
+363,DEBIT CARD BANK FEE 5923 ID,-120.45,2025-01-14,other
+364,EBAY 8337 ID,-411.34,2025-01-15,shopping
+365,SAFEWAY,-90.13,2025-01-16,groceries
+366,PURCHASE CHIPOTLE 5899 ID,-51.67,2025-01-18,dining
+367,POS DEBIT PUBLIX SEATTLE WA,-77.86,2025-01-19,groceries
+368,DUNKIN,-58.0,2025-01-19,dining
+369,HOME DEPOT,-364.59,2025-01-21,shopping
+370,Debit Card Chevron San Jose Ca,-34.35,2025-01-23,transport
+371,POS DEBIT SAFEWAY,-16.14,2025-01-23,groceries
+372,VENMO PAYMENT,-480.21,2025-01-25,other
+373,enterprise rent-a-car,-85.69,2025-01-25,transport
+374,MCDONALD'S,-59.85,2025-01-27,dining
+375,DEBIT CARD XBOX LIVE SEATTLE WA,-71.37,2025-02-01,entertainment
+376,TST* GRUBHUB #4748,-17.01,2025-02-01,dining
+377,MCDONALD'S STORE 2390,-52.96,2025-02-01,dining
+378,SQ *REALPAGE PMT,-3147.19,2025-02-02,rent
+379,Amazon.Com Seattle Wa,-131.49,2025-02-02,shopping
+380,UBER TRIP,-48.13,2025-02-04,transport
+381,ONE MEDICAL AUSTIN TX,-398.68,2025-02-04,health
+382,regal cinemas san jose ca,-36.01,2025-02-05,entertainment
+383,CITY GAS CO,-107.84,2025-02-06,utilities
+384,XBOX LIVE AUSTIN TX,-38.83,2025-02-07,entertainment
+385,WALMART SUPERCENTER STORE 895,-50.15,2025-02-07,groceries
+386,CHIPOTLE,-72.86,2025-02-08,dining
+387,BEST BUY,-324.82,2025-02-09,shopping
+388,macy's store 7737,-114.72,2025-02-11,shopping
+389,ZILLOW RENTAL,-1363.71,2025-02-13,rent
+390,disney plus,-22.22,2025-02-15,entertainment
+391,sq *macy's,-538.78,2025-02-17,shopping
+392,SHELL OIL,-80.94,2025-02-18,transport
+393,STEAM GAMES,-35.2,2025-02-18,entertainment
+394,DELTA AIR,-28.31,2025-02-18,transport
+395,Debit Card Target #7238,-531.07,2025-02-20,shopping
+396,grubhub new york ny,-35.65,2025-02-20,dining
+397,comcast xfinity,-81.58,2025-02-21,utilities
+398,SQ *USPS POSTAGE,-496.0,2025-02-21,other
+399,SQ *TICKETMASTER,-54.57,2025-02-21,entertainment
+400,sprouts farmers mkt,-157.26,2025-02-23,groceries
+401,STARBUCKS,-43.39,2025-02-25,dining
+402,labcorp,-416.01,2025-02-25,health
+403,TST* PAYROLL DEPOSIT 1234 ID,3080.35,2025-02-25,income
+404,sq *costco whse store 2518,-48.2,2025-02-27,groceries
+405,ach best buy,-254.66,2025-03-01,shopping
+406,DEBIT CARD ZILLOW RENTAL #1644,-2548.46,2025-03-03,rent
+407,CHIPOTLE AUSTIN TX,-66.67,2025-03-03,dining
+408,tst* cafe rouge new york ny,-64.04,2025-03-05,dining
+409,Kaiser Permanente Seattle Wa,-275.2,2025-03-05,health
+410,Uber Trip #3076,-67.18,2025-03-07,transport
+411,H-E-B NEW YORK NY,-25.93,2025-03-07,groceries
+412,ZARA,-125.73,2025-03-07,shopping
+413,SQ *DOORDASH SAN JOSE CA,-7.91,2025-03-07,dining
+414,ETSY #6251,-550.65,2025-03-09,shopping
+415,TST* APPLE STORE,-235.88,2025-03-10,shopping
+416,EBAY #668,-253.54,2025-03-11,shopping
+417,TST* QUEST DIAGNOSTICS,-329.93,2025-03-13,health
+418,amazon.com,-332.69,2025-03-14,shopping
+419,wayfair,-592.43,2025-03-16,shopping
+420,one medical #2088,-167.47,2025-03-18,health
+421,Macy'S Store 9266,-241.89,2025-03-19,shopping
+422,COSTCO WHSE SAN JOSE CA,-92.78,2025-03-20,groceries
+423,gofundme donation #5002,-490.72,2025-03-21,other
+424,purchase zara,-511.08,2025-03-23,shopping
+425,MCDONALD'S,-83.76,2025-03-24,dining
+426,STARBUCKS NEW YORK NY,-51.68,2025-03-25,dining
+427,Amtrak,-95.32,2025-03-26,transport
+428,Walmart Supercenter,-99.67,2025-03-27,groceries
+429,DEBIT CARD PLAYSTATION NTWK,-5.75,2025-04-01,entertainment
+430,MACY'S,-454.79,2025-04-01,shopping
+431,WALMART SUPERCENTER,-132.21,2025-04-02,groceries
+432,DUNKIN SEATTLE WA,-64.31,2025-04-02,dining
+433,XBOX LIVE,-22.94,2025-04-04,entertainment
+434,ZARA,-485.17,2025-04-04,shopping
+435,sq *uber eats,-38.06,2025-04-04,dining
+436,ikea,-565.13,2025-04-04,shopping
+437,Pos Debit Panera Bread,-33.79,2025-04-04,dining
+438,RENT - APT 4B,-2624.08,2025-04-05,rent
+439,Playstation Ntwk Seattle Wa,-35.99,2025-04-05,entertainment
+440,TRADER JOE'S,-112.99,2025-04-07,groceries
+441,ikea #8378,-219.55,2025-04-07,shopping
+442,sq *panera bread,-26.56,2025-04-07,dining
+443,SCE&G,-109.22,2025-04-08,utilities
+444,ZARA,-101.03,2025-04-09,shopping
+445,LABCORP,-410.06,2025-04-10,health
+446,KROGER SEATTLE WA,-127.15,2025-04-11,groceries
+447,IRS TAX REFUND,3292.44,2025-04-12,income
+448,WIRE TRANSFER,-323.71,2025-04-12,other
+449,Mcdonald'S,-87.35,2025-04-12,dining
+450,Etsy Store 6988,-536.92,2025-04-12,shopping
+451,SPROUTS FARMERS MKT,-75.28,2025-04-12,groceries
+452,H-E-B,-83.24,2025-04-14,groceries
+453,CITY GAS CO,-100.42,2025-04-16,utilities
+454,ACH SHELL OIL,-15.78,2025-04-18,transport
+455,TST* DIVIDEND VANGUARD,1783.16,2025-04-19,income
+456,APPLE STORE,-360.77,2025-04-19,shopping
+457,paypal transfer,-240.77,2025-04-20,other
+458,GRUBHUB STORE 7454,-58.72,2025-04-20,dining
+459,olive garden austin tx,-68.15,2025-04-22,dining
+460,76 gas #7777,-104.54,2025-04-23,transport
+461,SQ *TAQUERIA,-85.87,2025-04-24,dining
+462,AMAZON.COM #9958,-397.82,2025-04-24,shopping
+463,pizza hut,-33.27,2025-04-24,dining
+464,Debit Card Notary Service #2453,-43.66,2025-04-25,other
+465,Purchase Ikea #952,-447.27,2025-04-27,shopping
+466,ACH TICKETMASTER,-32.72,2025-04-28,entertainment
+467,Quest Diagnostics,-224.39,2025-05-02,health
+468,misc debit #6738,-482.63,2025-05-03,other
+469,CITY GAS CO,-28.25,2025-05-03,utilities
+470,ENTERPRISE RENT-A-CAR,-41.8,2025-05-04,transport
+471,apple store,-510.56,2025-05-04,shopping
+472,Panera Bread #3525,-73.15,2025-05-05,dining
+473,POS DEBIT MTA SUBWAY,-16.35,2025-05-06,transport
+474,DEBIT CARD WALMART SUPERCENTER,-61.71,2025-05-08,groceries
+475,Walmart Supercenter,-61.67,2025-05-08,groceries
+476,pos debit kroger,-87.15,2025-05-10,groceries
+477,HOME DEPOT SAN JOSE CA,-312.79,2025-05-12,shopping
+478,Spotify,-51.56,2025-05-12,entertainment
+479,debit card shell oil #2165,-5.51,2025-05-14,transport
+480,Safeway New York Ny,-10.86,2025-05-14,groceries
+481,SQ *WHOLE FOODS MKT NEW YORK NY,-95.66,2025-05-16,groceries
+482,Mcdonald'S #2095,-30.67,2025-05-16,dining
+483,apartment lease pmt,-1087.87,2025-05-17,rent
+484,pos debit wire transfer #4641,-455.14,2025-05-18,other
+485,TRADER JOE'S 5374 ID,-168.26,2025-05-20,groceries
+486,AMAZON.COM SEATTLE WA,-357.19,2025-05-21,shopping
+487,76 Gas,-48.05,2025-05-21,transport
+488,Ikea,-203.71,2025-05-23,shopping
+489,POS DEBIT ONE MEDICAL NEW YORK NY,-441.57,2025-05-24,health
+490,WIRE TRANSFER,-101.82,2025-05-26,other
+491,spotify,-69.99,2025-05-28,entertainment
+492,Chevron #193,-37.39,2025-05-28,transport
+493,GOFUNDME DONATION 8352 ID,-464.28,2025-06-02,other
+494,dr smith dds store 1811,-202.97,2025-06-03,health
+495,Costco Whse,-173.86,2025-06-03,groceries
+496,MISC DEBIT,-306.13,2025-06-04,other
+497,PIZZA HUT,-54.59,2025-06-04,dining
+498,sq *ikea,-19.95,2025-06-05,shopping
+499,REGAL CINEMAS STORE 3013,-21.12,2025-06-07,entertainment
+500,TST* NIKE STORE,-81.3,2025-06-08,shopping
+501,PURCHASE SPECTRUM,-95.98,2025-06-10,utilities
+502,mta subway san jose ca,-37.6,2025-06-11,transport
+503,PURCHASE EBAY 4869 ID,-284.3,2025-06-13,shopping
+504,TARGET,-573.92,2025-06-14,shopping
+505,pos debit tst* cafe rouge,-28.09,2025-06-15,dining
+506,WATER DIST AUSTIN TX,-136.56,2025-06-16,utilities
+507,Sq *Atm Withdrawal New York Ny,-257.99,2025-06-17,other
+508,enterprise rent-a-car,-54.12,2025-06-18,transport
+509,HOME DEPOT,-561.5,2025-06-18,shopping
+510,ALDI 3927 ID,-146.13,2025-06-18,groceries
+511,TST* CAFE ROUGE,-30.99,2025-06-18,dining
+512,ach realpage pmt,-2344.67,2025-06-18,rent
+513,ACH STRIPE PAYOUT,373.9,2025-06-19,income
+514,HOME DEPOT,-220.19,2025-06-21,shopping
+515,CITY GAS CO,-105.13,2025-06-21,utilities
+516,TST* WALMART SUPERCENTER,-119.5,2025-06-23,groceries
+517,Mcdonald'S Austin Tx,-27.0,2025-06-24,dining
+518,Panera Bread 4907 Id,-65.35,2025-06-26,dining
+519,con edison,-210.77,2025-06-27,utilities
+520,sq *mcdonald's,-31.85,2025-06-27,dining
+521,dividend vanguard #6392,4502.75,2025-07-01,income
+522,OLIVE GARDEN,-11.9,2025-07-02,dining
+523,TST* MTA SUBWAY,-39.32,2025-07-02,transport
+524,amc theatres seattle wa,-7.99,2025-07-02,entertainment
+525,TST* COMCAST XFINITY,-170.57,2025-07-04,utilities
+526,GROCERY OUTLET SEATTLE WA,-168.2,2025-07-05,groceries
+527,DUNKIN STORE 4845,-81.0,2025-07-05,dining
+528,ENTERPRISE RENT-A-CAR SEATTLE WA,-84.68,2025-07-05,transport
+529,SPOTIFY,-75.43,2025-07-06,entertainment
+530,doordash,-35.48,2025-07-06,dining
+531,MISC DEBIT,-76.05,2025-07-06,other
+532,wayfair,-499.02,2025-07-06,shopping
+533,CON EDISON,-38.08,2025-07-07,utilities
+534,Debit Card Whole Foods Mkt,-30.72,2025-07-08,groceries
+535,WHOLE FOODS MKT,-45.04,2025-07-09,groceries
+536,Sq *Bp# 7804 Id,-56.76,2025-07-11,transport
+537,Ach Sce&G New York Ny,-47.96,2025-07-11,utilities
+538,Bank Fee Seattle Wa,-290.32,2025-07-12,other
+539,PLAYSTATION NTWK,-72.51,2025-07-13,entertainment
+540,SQ *SCE&G #5082,-99.01,2025-07-14,utilities
+541,GRUBHUB,-29.65,2025-07-16,dining
+542,POS DEBIT IKEA 8285 ID,-403.42,2025-07-16,shopping
+543,spotify san jose ca,-13.58,2025-07-17,entertainment
+544,EXXONMOBIL,-99.29,2025-07-18,transport
+545,SPOTIFY NEW YORK NY,-43.77,2025-07-19,entertainment
+546,Atm Withdrawal #777,-452.63,2025-07-20,other
+547,DR SMITH DDS #1963,-325.4,2025-07-20,health
+548,AVALON COMMUNITIES NEW YORK NY,-3086.65,2025-07-22,rent
+549,Ach Hulu,-5.67,2025-07-23,entertainment
+550,ACH RITE AID STORE 5304,-190.59,2025-07-24,health
+551,LABCORP,-91.25,2025-07-25,health
+552,Best Buy,-92.17,2025-07-27,shopping
+553,COSTCO WHSE,-19.74,2025-07-27,groceries
+554,Rite Aid,-373.0,2025-07-27,health
+555,Duke Energy,-259.2,2025-07-28,utilities
+556,TST* ZELLE FROM J DOE,1778.36,2025-08-01,income
+557,Safeway Store 9628,-159.91,2025-08-01,groceries
+558,Sq *Sq *Taqueria,-71.6,2025-08-01,dining
+559,Debit Card Costco Whse Austin Tx,-49.52,2025-08-01,groceries
+560,QUEST DIAGNOSTICS STORE 1687,-439.72,2025-08-02,health
+561,SQ *TAQUERIA #6368,-51.48,2025-08-03,dining
+562,OLIVE GARDEN,-70.16,2025-08-03,dining
+563,Chipotle 7029 Id,-81.19,2025-08-05,dining
+564,DEBIT CARD USPS POSTAGE,-20.88,2025-08-05,other
+565,h-e-b #547,-161.84,2025-08-07,groceries
+566,Sq *Ticketmaster,-31.31,2025-08-09,entertainment
+567,T-MOBILE,-103.19,2025-08-10,utilities
+568,CVS/PHARMACY,-406.62,2025-08-10,health
+569,ACH STRIPE PAYOUT STORE 9663,4027.46,2025-08-12,income
+570,venmo payment,-242.25,2025-08-14,other
+571,macy's,-23.9,2025-08-15,shopping
+572,VENMO CASHOUT,3512.29,2025-08-16,income
+573,Check #1042,-79.27,2025-08-18,other
+574,sq *whole foods mkt,-75.43,2025-08-19,groceries
+575,PUBLIX 7089 ID,-84.56,2025-08-20,groceries
+576,Purchase Parking Meter,-19.37,2025-08-22,transport
+577,H-E-B NEW YORK NY,-30.9,2025-08-22,groceries
+578,APPLE STORE,-541.09,2025-08-24,shopping
+579,SQ *KROGER SEATTLE WA,-178.88,2025-08-24,groceries
+580,TST* DUNKIN,-47.57,2025-08-26,dining
+581,76 GAS #9785,-81.4,2025-08-27,transport
+582,ACH STRIPE PAYOUT #8243,2187.68,2025-09-01,income
+583,LYFT RIDE,-116.57,2025-09-01,transport
+584,MACY'S,-301.28,2025-09-03,shopping
+585,ach macy's,-43.99,2025-09-04,shopping
+586,GOFUNDME DONATION #9438,-250.44,2025-09-06,other
+587,aldi,-9.68,2025-09-08,groceries
+588,Nike Store New York Ny,-243.33,2025-09-08,shopping
+589,TST* PUBLIX SAN JOSE CA,-113.24,2025-09-10,groceries
+590,chevron,-90.27,2025-09-12,transport
+591,sq *one medical 9750 id,-431.01,2025-09-12,health
+592,PARKING METER NEW YORK NY,-40.63,2025-09-12,transport
+593,GRUBHUB #8018,-78.0,2025-09-13,dining
+594,PURCHASE WHOLE FOODS MKT,-139.8,2025-09-13,groceries
+595,Macy'S Seattle Wa,-412.4,2025-09-13,shopping
+596,NATIONAL GRID,-257.7,2025-09-14,utilities
+597,STEAM GAMES 2737 ID,-54.42,2025-09-16,entertainment
+598,WAYFAIR,-489.2,2025-09-18,shopping
+599,ACH PUBLIX,-158.36,2025-09-20,groceries
