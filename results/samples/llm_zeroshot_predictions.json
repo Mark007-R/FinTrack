@@ -1,0 +1,29 @@
+{
+  "_meta": {
+    "model": "Claude (Opus) zero-shot, agent-in-the-loop on OCR text",
+    "note": "Predictions produced blind: only receipt text (results/samples/_llm_blind_input.json) was shown, ground truth withheld. N=20 subset; indicative of frontier zero-shot extraction. Full rigorous frontier comparison is Day 8.",
+    "prompt_used": "Extract the grand total (final payable amount incl. tax/rounding), the transaction date (YYYY-MM-DD), and the merchant/company name from this receipt OCR text."
+  },
+  "predictions": [
+    {"id": "0",  "amount": 193.00, "date": "2019-01-15", "merchant": "OJC MARKETING SDN BHD"},
+    {"id": "1",  "amount": 170.00, "date": "2019-01-02", "merchant": "OJC MARKETING SDN BHD"},
+    {"id": "2",  "amount": 436.20, "date": "2018-02-09", "merchant": "PERNIAGAAN ZHENG HUI"},
+    {"id": "3",  "amount": 4.90,   "date": "2018-02-01", "merchant": "PETRON BKT LANJAN SB"},
+    {"id": "4",  "amount": 38.90,  "date": "2018-01-18", "merchant": "GERBANG ALAF RESTAURANTS SDN BHD"},
+    {"id": "5",  "amount": 7.30,   "date": "2018-02-05", "merchant": "SIN LIANHAP SON BHD"},
+    {"id": "6",  "amount": 6.35,   "date": "2018-01-29", "merchant": "CROSS CHANNEL NETWORK SDN BHD"},
+    {"id": "7",  "amount": 7.95,   "date": "2017-12-31", "merchant": "CROSS CHANNEL NETWORK SDN BHD"},
+    {"id": "8",  "amount": 8.00,   "date": "2018-01-08", "merchant": "SWC ENTERPRISE SDN BHD"},
+    {"id": "9",  "amount": 278.80, "date": "2017-11-20", "merchant": "LIGHTROOM GALLERY SDN BHD"},
+    {"id": "10", "amount": 169.80, "date": "2017-11-20", "merchant": "99 SPEED MART S/B"},
+    {"id": "11", "amount": 1.00,   "date": "2018-03-23", "merchant": "SECURE PARKING CORPORATION S/B"},
+    {"id": "12", "amount": 278.80, "date": "2017-11-20", "merchant": "LIGHTROOM GALLERY SDN BHD"},
+    {"id": "13", "amount": 30.25,  "date": "2018-03-22", "merchant": "OLDTOWN WHITE COFFEE"},
+    {"id": "14", "amount": 53.00,  "date": "2018-03-20", "merchant": "UROKO JAPANESE CUISINE SDN BHD"},
+    {"id": "15", "amount": 27.35,  "date": "2018-01-27", "merchant": "TEO HENG STATIONERY & BOOKS"},
+    {"id": "16", "amount": 127.20, "date": "2018-03-15", "merchant": "TEO HENG STATIONERY & BOOKS"},
+    {"id": "17", "amount": 1.05,   "date": "2018-01-29", "merchant": "TEO HENG STATIONERY & BOOKS"},
+    {"id": "18", "amount": 4.20,   "date": "2018-01-02", "merchant": "SWC ENTERPRISE SDN BHD"},
+    {"id": "19", "amount": 31.90,  "date": "2018-03-02", "merchant": "F&P PHARMACY"}
+  ]
+}
