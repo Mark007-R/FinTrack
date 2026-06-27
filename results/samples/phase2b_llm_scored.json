@@ -1,0 +1,38 @@
+[
+  {
+    "method": "keyword",
+    "n_subset": 60,
+    "macro_f1": 0.6464,
+    "accuracy": 0.6
+  },
+  {
+    "method": "tfidf_lgbm",
+    "n_subset": 60,
+    "macro_f1": 0.8387,
+    "accuracy": 0.8333
+  },
+  {
+    "method": "tfidf_linsvc",
+    "n_subset": 60,
+    "macro_f1": 0.9832,
+    "accuracy": 0.9833
+  },
+  {
+    "method": "sbert_lgbm",
+    "n_subset": 60,
+    "macro_f1": 0.9478,
+    "accuracy": 0.95
+  },
+  {
+    "method": "distilbert",
+    "n_subset": 60,
+    "macro_f1": 1.0,
+    "accuracy": 1.0
+  },
+  {
+    "method": "llm_zeroshot (Claude)",
+    "n_subset": 60,
+    "macro_f1": 1.0,
+    "accuracy": 1.0
+  }
+]

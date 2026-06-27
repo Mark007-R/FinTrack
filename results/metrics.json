@@ -41,5 +41,204 @@
         "sec_per_doc": 17.3762
       }
     ]
+  },
+  {
+    "generated": "2026-06-27",
+    "day": 3,
+    "phase": "Phase 2b - expense categorizer comparison",
+    "split": {
+      "train": 420,
+      "test": 180,
+      "seed": 20260627
+    },
+    "leaderboard": [
+      {
+        "method": "keyword (baseline)",
+        "n_test": 180,
+        "macro_f1": 0.658,
+        "accuracy": 0.6056,
+        "fit_pred_sec": 0.0
+      },
+      {
+        "method": "tfidf_lgbm",
+        "n_test": 180,
+        "macro_f1": 0.1156,
+        "accuracy": 0.1778,
+        "fit_pred_sec": 6.7
+      },
+      {
+        "method": "sbert_lgbm",
+        "n_test": 180,
+        "macro_f1": 0.9388,
+        "accuracy": 0.9389,
+        "fit_pred_sec": 20.83
+      },
+      {
+        "method": "distilbert",
+        "n_test": 180,
+        "macro_f1": 0.9943,
+        "accuracy": 0.9944,
+        "fit_pred_sec": 119.95
+      }
+    ],
+    "per_class_f1": {
+      "keyword (baseline)": {
+        "dining": 0.5263,
+        "entertainment": 0.7586,
+        "groceries": 0.8846,
+        "health": 0.7619,
+        "income": 0.8,
+        "other": 0.3146,
+        "rent": 0.6667,
+        "shopping": 0.76,
+        "transport": 0.4706,
+        "utilities": 0.6364
+      },
+      "tfidf_lgbm": {
+        "dining": 0.2041,
+        "entertainment": 0.0,
+        "groceries": 0.2273,
+        "health": 0.0,
+        "income": 0.1818,
+        "other": 0.0,
+        "rent": 0.0,
+        "shopping": 0.3243,
+        "transport": 0.219,
+        "utilities": 0.0
+      },
+      "sbert_lgbm": {
+        "dining": 0.9286,
+        "entertainment": 0.9189,
+        "groceries": 0.9667,
+        "health": 0.9167,
+        "income": 1.0,
+        "other": 0.9091,
+        "rent": 0.9231,
+        "shopping": 0.9492,
+        "transport": 0.9474,
+        "utilities": 0.9286
+      },
+      "distilbert": {
+        "dining": 1.0,
+        "entertainment": 1.0,
+        "groceries": 0.9831,
+        "health": 0.96,
+        "income": 1.0,
+        "other": 1.0,
+        "rent": 1.0,
+        "shopping": 1.0,
+        "transport": 1.0,
+        "utilities": 1.0
+      }
+    }
+  },
+  {
+    "generated": "2026-06-27",
+    "day": 3,
+    "phase": "Phase 2b - expense categorizer comparison",
+    "split": {
+      "train": 420,
+      "test": 180,
+      "seed": 20260627
+    },
+    "leaderboard": [
+      {
+        "method": "keyword (baseline)",
+        "n_test": 180,
+        "macro_f1": 0.658,
+        "accuracy": 0.6056,
+        "fit_pred_sec": 0.0
+      },
+      {
+        "method": "tfidf_lgbm",
+        "n_test": 180,
+        "macro_f1": 0.8501,
+        "accuracy": 0.8611,
+        "fit_pred_sec": 3.71
+      },
+      {
+        "method": "tfidf_linsvc",
+        "n_test": 180,
+        "macro_f1": 0.9752,
+        "accuracy": 0.9778,
+        "fit_pred_sec": 0.08
+      },
+      {
+        "method": "sbert_lgbm",
+        "n_test": 180,
+        "macro_f1": 0.9388,
+        "accuracy": 0.9389,
+        "fit_pred_sec": 18.71
+      },
+      {
+        "method": "distilbert",
+        "n_test": 180,
+        "macro_f1": 0.9943,
+        "accuracy": 0.9944,
+        "fit_pred_sec": 71.65
+      }
+    ],
+    "per_class_f1": {
+      "keyword (baseline)": {
+        "dining": 0.5263,
+        "entertainment": 0.7586,
+        "groceries": 0.8846,
+        "health": 0.7619,
+        "income": 0.8,
+        "other": 0.3146,
+        "rent": 0.6667,
+        "shopping": 0.76,
+        "transport": 0.4706,
+        "utilities": 0.6364
+      },
+      "tfidf_lgbm": {
+        "dining": 0.9455,
+        "entertainment": 1.0,
+        "groceries": 0.9492,
+        "health": 0.7692,
+        "income": 0.8,
+        "other": 0.9032,
+        "rent": 0.9231,
+        "shopping": 0.8889,
+        "transport": 0.7222,
+        "utilities": 0.6
+      },
+      "tfidf_linsvc": {
+        "dining": 1.0,
+        "entertainment": 1.0,
+        "groceries": 0.9831,
+        "health": 0.96,
+        "income": 1.0,
+        "other": 0.9677,
+        "rent": 1.0,
+        "shopping": 1.0,
+        "transport": 0.9524,
+        "utilities": 0.8889
+      },
+      "sbert_lgbm": {
+        "dining": 0.9286,
+        "entertainment": 0.9189,
+        "groceries": 0.9667,
+        "health": 0.9167,
+        "income": 1.0,
+        "other": 0.9091,
+        "rent": 0.9231,
+        "shopping": 0.9492,
+        "transport": 0.9474,
+        "utilities": 0.9286
+      },
+      "distilbert": {
+        "dining": 1.0,
+        "entertainment": 1.0,
+        "groceries": 0.9831,
+        "health": 0.96,
+        "income": 1.0,
+        "other": 1.0,
+        "rent": 1.0,
+        "shopping": 1.0,
+        "transport": 1.0,
+        "utilities": 1.0
+      }
+    }
   }
 ]
