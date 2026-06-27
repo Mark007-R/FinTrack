@@ -1,0 +1,21 @@
+{
+  "_meta": {
+    "model": "Claude (Opus) zero-shot, agent-in-the-loop on transaction descriptions",
+    "note": "Blind: only descriptions (results/samples/_llm_cat_blind_input.json) were shown, labels withheld. N=60 stratified test-subset. Every trained model's macro-F1 is recomputed on this same subset for an apples-to-apples LLM row. Full frontier comparison is Day 8.",
+    "classes": ["groceries","dining","transport","utilities","rent","entertainment","health","shopping","income","other"],
+    "prompt_used": "Classify each bank-transaction description into exactly one of: groceries, dining, transport, utilities, rent, entertainment, health, shopping, income, other."
+  },
+  "predictions": {
+    "90": "entertainment", "439": "entertainment", "119": "entertainment", "597": "entertainment",
+    "270": "entertainment", "149": "entertainment",
+    "64": "dining", "386": "dining", "284": "dining", "22": "dining", "505": "dining", "225": "dining",
+    "445": "health", "167": "health", "253": "health", "402": "health", "554": "health", "467": "health",
+    "356": "utilities", "227": "utilities", "201": "utilities", "254": "utilities", "240": "utilities", "469": "utilities",
+    "325": "rent", "182": "rent", "169": "rent", "512": "rent", "9": "rent", "18": "rent",
+    "532": "shopping", "232": "shopping", "391": "shopping", "219": "shopping", "54": "shopping", "177": "shopping",
+    "574": "groceries", "207": "groceries", "45": "groceries", "301": "groceries", "411": "groceries", "86": "groceries",
+    "264": "transport", "590": "transport", "85": "transport", "276": "transport", "289": "transport", "373": "transport",
+    "162": "income", "252": "income", "447": "income", "521": "income", "242": "income", "43": "income",
+    "570": "other", "320": "other", "188": "other", "127": "other", "73": "other", "564": "other"
+  }
+}

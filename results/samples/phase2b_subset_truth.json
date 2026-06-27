@@ -1,0 +1,556 @@
+{
+  "labels": [
+    "dining",
+    "entertainment",
+    "groceries",
+    "health",
+    "income",
+    "other",
+    "rent",
+    "shopping",
+    "transport",
+    "utilities"
+  ],
+  "subset": [
+    {
+      "id": "90",
+      "true": "entertainment",
+      "keyword": "entertainment",
+      "tfidf_lgbm": "entertainment",
+      "tfidf_linsvc": "entertainment",
+      "sbert_lgbm": "entertainment",
+      "distilbert": "entertainment"
+    },
+    {
+      "id": "439",
+      "true": "entertainment",
+      "keyword": "other",
+      "tfidf_lgbm": "entertainment",
+      "tfidf_linsvc": "entertainment",
+      "sbert_lgbm": "entertainment",
+      "distilbert": "entertainment"
+    },
+    {
+      "id": "119",
+      "true": "entertainment",
+      "keyword": "other",
+      "tfidf_lgbm": "entertainment",
+      "tfidf_linsvc": "entertainment",
+      "sbert_lgbm": "entertainment",
+      "distilbert": "entertainment"
+    },
+    {
+      "id": "597",
+      "true": "entertainment",
+      "keyword": "entertainment",
+      "tfidf_lgbm": "entertainment",
+      "tfidf_linsvc": "entertainment",
+      "sbert_lgbm": "entertainment",
+      "distilbert": "entertainment"
+    },
+    {
+      "id": "270",
+      "true": "entertainment",
+      "keyword": "entertainment",
+      "tfidf_lgbm": "entertainment",
+      "tfidf_linsvc": "entertainment",
+      "sbert_lgbm": "entertainment",
+      "distilbert": "entertainment"
+    },
+    {
+      "id": "149",
+      "true": "entertainment",
+      "keyword": "entertainment",
+      "tfidf_lgbm": "entertainment",
+      "tfidf_linsvc": "entertainment",
+      "sbert_lgbm": "entertainment",
+      "distilbert": "entertainment"
+    },
+    {
+      "id": "64",
+      "true": "dining",
+      "keyword": "dining",
+      "tfidf_lgbm": "dining",
+      "tfidf_linsvc": "dining",
+      "sbert_lgbm": "dining",
+      "distilbert": "dining"
+    },
+    {
+      "id": "386",
+      "true": "dining",
+      "keyword": "other",
+      "tfidf_lgbm": "dining",
+      "tfidf_linsvc": "dining",
+      "sbert_lgbm": "dining",
+      "distilbert": "dining"
+    },
+    {
+      "id": "284",
+      "true": "dining",
+      "keyword": "other",
+      "tfidf_lgbm": "dining",
+      "tfidf_linsvc": "dining",
+      "sbert_lgbm": "dining",
+      "distilbert": "dining"
+    },
+    {
+      "id": "22",
+      "true": "dining",
+      "keyword": "other",
+      "tfidf_lgbm": "dining",
+      "tfidf_linsvc": "dining",
+      "sbert_lgbm": "dining",
+      "distilbert": "dining"
+    },
+    {
+      "id": "505",
+      "true": "dining",
+      "keyword": "dining",
+      "tfidf_lgbm": "dining",
+      "tfidf_linsvc": "dining",
+      "sbert_lgbm": "dining",
+      "distilbert": "dining"
+    },
+    {
+      "id": "225",
+      "true": "dining",
+      "keyword": "dining",
+      "tfidf_lgbm": "dining",
+      "tfidf_linsvc": "dining",
+      "sbert_lgbm": "dining",
+      "distilbert": "dining"
+    },
+    {
+      "id": "445",
+      "true": "health",
+      "keyword": "health",
+      "tfidf_lgbm": "utilities",
+      "tfidf_linsvc": "health",
+      "sbert_lgbm": "health",
+      "distilbert": "health"
+    },
+    {
+      "id": "167",
+      "true": "health",
+      "keyword": "health",
+      "tfidf_lgbm": "health",
+      "tfidf_linsvc": "health",
+      "sbert_lgbm": "health",
+      "distilbert": "health"
+    },
+    {
+      "id": "253",
+      "true": "health",
+      "keyword": "other",
+      "tfidf_lgbm": "health",
+      "tfidf_linsvc": "health",
+      "sbert_lgbm": "health",
+      "distilbert": "health"
+    },
+    {
+      "id": "402",
+      "true": "health",
+      "keyword": "health",
+      "tfidf_lgbm": "utilities",
+      "tfidf_linsvc": "health",
+      "sbert_lgbm": "health",
+      "distilbert": "health"
+    },
+    {
+      "id": "554",
+      "true": "health",
+      "keyword": "other",
+      "tfidf_lgbm": "health",
+      "tfidf_linsvc": "health",
+      "sbert_lgbm": "health",
+      "distilbert": "health"
+    },
+    {
+      "id": "467",
+      "true": "health",
+      "keyword": "health",
+      "tfidf_lgbm": "health",
+      "tfidf_linsvc": "health",
+      "sbert_lgbm": "health",
+      "distilbert": "health"
+    },
+    {
+      "id": "356",
+      "true": "utilities",
+      "keyword": "utilities",
+      "tfidf_lgbm": "shopping",
+      "tfidf_linsvc": "transport",
+      "sbert_lgbm": "utilities",
+      "distilbert": "utilities"
+    },
+    {
+      "id": "227",
+      "true": "utilities",
+      "keyword": "other",
+      "tfidf_lgbm": "utilities",
+      "tfidf_linsvc": "utilities",
+      "sbert_lgbm": "utilities",
+      "distilbert": "utilities"
+    },
+    {
+      "id": "201",
+      "true": "utilities",
+      "keyword": "utilities",
+      "tfidf_lgbm": "utilities",
+      "tfidf_linsvc": "utilities",
+      "sbert_lgbm": "utilities",
+      "distilbert": "utilities"
+    },
+    {
+      "id": "254",
+      "true": "utilities",
+      "keyword": "other",
+      "tfidf_lgbm": "utilities",
+      "tfidf_linsvc": "utilities",
+      "sbert_lgbm": "utilities",
+      "distilbert": "utilities"
+    },
+    {
+      "id": "240",
+      "true": "utilities",
+      "keyword": "transport",
+      "tfidf_lgbm": "utilities",
+      "tfidf_linsvc": "utilities",
+      "sbert_lgbm": "utilities",
+      "distilbert": "utilities"
+    },
+    {
+      "id": "469",
+      "true": "utilities",
+      "keyword": "transport",
+      "tfidf_lgbm": "utilities",
+      "tfidf_linsvc": "utilities",
+      "sbert_lgbm": "utilities",
+      "distilbert": "utilities"
+    },
+    {
+      "id": "325",
+      "true": "rent",
+      "keyword": "rent",
+      "tfidf_lgbm": "rent",
+      "tfidf_linsvc": "rent",
+      "sbert_lgbm": "other",
+      "distilbert": "rent"
+    },
+    {
+      "id": "182",
+      "true": "rent",
+      "keyword": "other",
+      "tfidf_lgbm": "rent",
+      "tfidf_linsvc": "rent",
+      "sbert_lgbm": "rent",
+      "distilbert": "rent"
+    },
+    {
+      "id": "169",
+      "true": "rent",
+      "keyword": "rent",
+      "tfidf_lgbm": "utilities",
+      "tfidf_linsvc": "rent",
+      "sbert_lgbm": "rent",
+      "distilbert": "rent"
+    },
+    {
+      "id": "512",
+      "true": "rent",
+      "keyword": "other",
+      "tfidf_lgbm": "rent",
+      "tfidf_linsvc": "rent",
+      "sbert_lgbm": "rent",
+      "distilbert": "rent"
+    },
+    {
+      "id": "9",
+      "true": "rent",
+      "keyword": "rent",
+      "tfidf_lgbm": "rent",
+      "tfidf_linsvc": "rent",
+      "sbert_lgbm": "rent",
+      "distilbert": "rent"
+    },
+    {
+      "id": "18",
+      "true": "rent",
+      "keyword": "rent",
+      "tfidf_lgbm": "rent",
+      "tfidf_linsvc": "rent",
+      "sbert_lgbm": "rent",
+      "distilbert": "rent"
+    },
+    {
+      "id": "532",
+      "true": "shopping",
+      "keyword": "transport",
+      "tfidf_lgbm": "shopping",
+      "tfidf_linsvc": "shopping",
+      "sbert_lgbm": "shopping",
+      "distilbert": "shopping"
+    },
+    {
+      "id": "232",
+      "true": "shopping",
+      "keyword": "shopping",
+      "tfidf_lgbm": "shopping",
+      "tfidf_linsvc": "shopping",
+      "sbert_lgbm": "shopping",
+      "distilbert": "shopping"
+    },
+    {
+      "id": "391",
+      "true": "shopping",
+      "keyword": "shopping",
+      "tfidf_lgbm": "shopping",
+      "tfidf_linsvc": "shopping",
+      "sbert_lgbm": "shopping",
+      "distilbert": "shopping"
+    },
+    {
+      "id": "219",
+      "true": "shopping",
+      "keyword": "shopping",
+      "tfidf_lgbm": "shopping",
+      "tfidf_linsvc": "shopping",
+      "sbert_lgbm": "shopping",
+      "distilbert": "shopping"
+    },
+    {
+      "id": "54",
+      "true": "shopping",
+      "keyword": "shopping",
+      "tfidf_lgbm": "shopping",
+      "tfidf_linsvc": "shopping",
+      "sbert_lgbm": "shopping",
+      "distilbert": "shopping"
+    },
+    {
+      "id": "177",
+      "true": "shopping",
+      "keyword": "other",
+      "tfidf_lgbm": "utilities",
+      "tfidf_linsvc": "shopping",
+      "sbert_lgbm": "shopping",
+      "distilbert": "shopping"
+    },
+    {
+      "id": "574",
+      "true": "groceries",
+      "keyword": "groceries",
+      "tfidf_lgbm": "groceries",
+      "tfidf_linsvc": "groceries",
+      "sbert_lgbm": "groceries",
+      "distilbert": "groceries"
+    },
+    {
+      "id": "207",
+      "true": "groceries",
+      "keyword": "groceries",
+      "tfidf_lgbm": "groceries",
+      "tfidf_linsvc": "groceries",
+      "sbert_lgbm": "groceries",
+      "distilbert": "groceries"
+    },
+    {
+      "id": "45",
+      "true": "groceries",
+      "keyword": "groceries",
+      "tfidf_lgbm": "groceries",
+      "tfidf_linsvc": "groceries",
+      "sbert_lgbm": "groceries",
+      "distilbert": "groceries"
+    },
+    {
+      "id": "301",
+      "true": "groceries",
+      "keyword": "groceries",
+      "tfidf_lgbm": "groceries",
+      "tfidf_linsvc": "groceries",
+      "sbert_lgbm": "groceries",
+      "distilbert": "groceries"
+    },
+    {
+      "id": "411",
+      "true": "groceries",
+      "keyword": "other",
+      "tfidf_lgbm": "groceries",
+      "tfidf_linsvc": "groceries",
+      "sbert_lgbm": "groceries",
+      "distilbert": "groceries"
+    },
+    {
+      "id": "86",
+      "true": "groceries",
+      "keyword": "groceries",
+      "tfidf_lgbm": "groceries",
+      "tfidf_linsvc": "groceries",
+      "sbert_lgbm": "groceries",
+      "distilbert": "groceries"
+    },
+    {
+      "id": "264",
+      "true": "transport",
+      "keyword": "other",
+      "tfidf_lgbm": "utilities",
+      "tfidf_linsvc": "transport",
+      "sbert_lgbm": "transport",
+      "distilbert": "transport"
+    },
+    {
+      "id": "590",
+      "true": "transport",
+      "keyword": "other",
+      "tfidf_lgbm": "transport",
+      "tfidf_linsvc": "transport",
+      "sbert_lgbm": "transport",
+      "distilbert": "transport"
+    },
+    {
+      "id": "85",
+      "true": "transport",
+      "keyword": "transport",
+      "tfidf_lgbm": "transport",
+      "tfidf_linsvc": "transport",
+      "sbert_lgbm": "transport",
+      "distilbert": "transport"
+    },
+    {
+      "id": "276",
+      "true": "transport",
+      "keyword": "other",
+      "tfidf_lgbm": "utilities",
+      "tfidf_linsvc": "transport",
+      "sbert_lgbm": "entertainment",
+      "distilbert": "transport"
+    },
+    {
+      "id": "289",
+      "true": "transport",
+      "keyword": "other",
+      "tfidf_lgbm": "groceries",
+      "tfidf_linsvc": "transport",
+      "sbert_lgbm": "dining",
+      "distilbert": "transport"
+    },
+    {
+      "id": "373",
+      "true": "transport",
+      "keyword": "rent",
+      "tfidf_lgbm": "transport",
+      "tfidf_linsvc": "transport",
+      "sbert_lgbm": "transport",
+      "distilbert": "transport"
+    },
+    {
+      "id": "162",
+      "true": "income",
+      "keyword": "income",
+      "tfidf_lgbm": "income",
+      "tfidf_linsvc": "income",
+      "sbert_lgbm": "income",
+      "distilbert": "income"
+    },
+    {
+      "id": "252",
+      "true": "income",
+      "keyword": "other",
+      "tfidf_lgbm": "income",
+      "tfidf_linsvc": "income",
+      "sbert_lgbm": "income",
+      "distilbert": "income"
+    },
+    {
+      "id": "447",
+      "true": "income",
+      "keyword": "income",
+      "tfidf_lgbm": "income",
+      "tfidf_linsvc": "income",
+      "sbert_lgbm": "income",
+      "distilbert": "income"
+    },
+    {
+      "id": "521",
+      "true": "income",
+      "keyword": "income",
+      "tfidf_lgbm": "health",
+      "tfidf_linsvc": "income",
+      "sbert_lgbm": "income",
+      "distilbert": "income"
+    },
+    {
+      "id": "242",
+      "true": "income",
+      "keyword": "other",
+      "tfidf_lgbm": "income",
+      "tfidf_linsvc": "income",
+      "sbert_lgbm": "income",
+      "distilbert": "income"
+    },
+    {
+      "id": "43",
+      "true": "income",
+      "keyword": "income",
+      "tfidf_lgbm": "health",
+      "tfidf_linsvc": "income",
+      "sbert_lgbm": "income",
+      "distilbert": "income"
+    },
+    {
+      "id": "570",
+      "true": "other",
+      "keyword": "other",
+      "tfidf_lgbm": "other",
+      "tfidf_linsvc": "other",
+      "sbert_lgbm": "other",
+      "distilbert": "other"
+    },
+    {
+      "id": "320",
+      "true": "other",
+      "keyword": "other",
+      "tfidf_lgbm": "other",
+      "tfidf_linsvc": "other",
+      "sbert_lgbm": "other",
+      "distilbert": "other"
+    },
+    {
+      "id": "188",
+      "true": "other",
+      "keyword": "other",
+      "tfidf_lgbm": "other",
+      "tfidf_linsvc": "other",
+      "sbert_lgbm": "other",
+      "distilbert": "other"
+    },
+    {
+      "id": "127",
+      "true": "other",
+      "keyword": "shopping",
+      "tfidf_lgbm": "other",
+      "tfidf_linsvc": "other",
+      "sbert_lgbm": "other",
+      "distilbert": "other"
+    },
+    {
+      "id": "73",
+      "true": "other",
+      "keyword": "other",
+      "tfidf_lgbm": "other",
+      "tfidf_linsvc": "other",
+      "sbert_lgbm": "other",
+      "distilbert": "other"
+    },
+    {
+      "id": "564",
+      "true": "other",
+      "keyword": "other",
+      "tfidf_lgbm": "other",
+      "tfidf_linsvc": "other",
+      "sbert_lgbm": "other",
+      "distilbert": "other"
+    }
+  ]
+}

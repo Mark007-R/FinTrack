@@ -1,0 +1,74 @@
+[
+  {
+    "description": "PLAYSTATION NTWK NEW YORK NY",
+    "true": "entertainment",
+    "keyword_pred": "other",
+    "tfidf_lgbm_pred": "entertainment"
+  },
+  {
+    "description": "ACH TICKETMASTER",
+    "true": "entertainment",
+    "keyword_pred": "other",
+    "tfidf_lgbm_pred": "entertainment"
+  },
+  {
+    "description": "HBO MAX AUSTIN TX",
+    "true": "entertainment",
+    "keyword_pred": "other",
+    "tfidf_lgbm_pred": "entertainment"
+  },
+  {
+    "description": "ticketmaster",
+    "true": "entertainment",
+    "keyword_pred": "other",
+    "tfidf_lgbm_pred": "entertainment"
+  },
+  {
+    "description": "Playstation Ntwk Seattle Wa",
+    "true": "entertainment",
+    "keyword_pred": "other",
+    "tfidf_lgbm_pred": "entertainment"
+  },
+  {
+    "description": "SQ *TICKETMASTER",
+    "true": "entertainment",
+    "keyword_pred": "other",
+    "tfidf_lgbm_pred": "entertainment"
+  },
+  {
+    "description": "ticketmaster",
+    "true": "entertainment",
+    "keyword_pred": "other",
+    "tfidf_lgbm_pred": "entertainment"
+  },
+  {
+    "description": "panera bread san jose ca",
+    "true": "dining",
+    "keyword_pred": "other",
+    "tfidf_lgbm_pred": "dining"
+  },
+  {
+    "description": "chipotle",
+    "true": "dining",
+    "keyword_pred": "other",
+    "tfidf_lgbm_pred": "dining"
+  },
+  {
+    "description": "Chipotle 7029 Id",
+    "true": "dining",
+    "keyword_pred": "other",
+    "tfidf_lgbm_pred": "dining"
+  },
+  {
+    "description": "PANERA BREAD STORE 1066",
+    "true": "dining",
+    "keyword_pred": "shopping",
+    "tfidf_lgbm_pred": "dining"
+  },
+  {
+    "description": "CHIPOTLE",
+    "true": "dining",
+    "keyword_pred": "other",
+    "tfidf_lgbm_pred": "dining"
+  }
+]
