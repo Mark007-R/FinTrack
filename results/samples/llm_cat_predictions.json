@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "model": "Claude (Opus) zero-shot, agent-in-the-loop on transaction descriptions",
+    "model": "Claude (Opus) zero-shot on transaction descriptions",
     "note": "Blind: only descriptions (results/samples/_llm_cat_blind_input.json) were shown, labels withheld. N=60 stratified test-subset. Every trained model's macro-F1 is recomputed on this same subset for an apples-to-apples LLM row. Full frontier comparison is Day 8.",
     "classes": ["groceries","dining","transport","utilities","rent","entertainment","health","shopping","income","other"],
     "prompt_used": "Classify each bank-transaction description into exactly one of: groceries, dining, transport, utilities, rent, entertainment, health, shopping, income, other."

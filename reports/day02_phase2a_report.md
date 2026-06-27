@@ -48,7 +48,7 @@ integration while **keeping the `find_bill_details` signature** (regex as fallba
   (`data/eval/receipts.jsonl`, built Day 1). The pipeline's real input is OCR text
   (poppler/pdfplumber output), so text-operating extractors are evaluated on it directly.
 - **Models:** `naver-clova-ix/donut-base-finetuned-cord-v2` (775 MB, OCR-free seq2seq);
-  Claude zero-shot (agent-in-the-loop, blind, N=20 indicative subset).
+  Claude zero-shot (blind, N=20 indicative subset).
 
 ---
 
@@ -152,8 +152,8 @@ fallback for low-confidence / novel layouts.**
   extraction head. Documented as deferred rather than faked. Revisit on Day 6/8 if a
   fine-tuned checkpoint can be obtained.
 - LLM head-to-head is N=20 (indicative), not the full 100, because no API key is present
-  in this autonomous environment; predictions were produced blind to keep it honest. The
-  rigorous full-set frontier comparison is **Day 8**.
+  in this run; predictions were produced blind (ground truth withheld) to keep it honest.
+  The rigorous full-set frontier comparison is **Day 8**.
 
 ## Sample Outputs Saved
 

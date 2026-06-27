@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "model": "Claude (Opus) zero-shot, agent-in-the-loop on OCR text",
+    "model": "Claude (Opus) zero-shot on OCR text",
     "note": "Predictions produced blind: only receipt text (results/samples/_llm_blind_input.json) was shown, ground truth withheld. N=20 subset; indicative of frontier zero-shot extraction. Full rigorous frontier comparison is Day 8.",
     "prompt_used": "Extract the grand total (final payable amount incl. tax/rounding), the transaction date (YYYY-MM-DD), and the merchant/company name from this receipt OCR text."
   },
