@@ -240,5 +240,77 @@
         "utilities": 1.0
       }
     }
+  },
+  {
+    "day": "day4_phase2c",
+    "generated": "2026-06-28 15:51",
+    "dataset": {
+      "path": "data/eval/day4_transactions.csv",
+      "n_txns": 3054,
+      "n_outflows": 2976,
+      "n_anomalies": 20,
+      "n_duplicates": 6,
+      "n_recurring": 330,
+      "months": 36,
+      "test_months": 6
+    },
+    "anomaly": {
+      "robust_zscore_MAD": {
+        "AP": 0.39982464116089167,
+        "P_at_20": 0.2,
+        "R_at_20": 0.2,
+        "F1_native": 0.22988505747126436,
+        "n_flagged": 154,
+        "duplicates_caught": 0
+      },
+      "isolation_forest": {
+        "AP": 0.9785714285714289,
+        "P_at_20": 0.95,
+        "R_at_20": 0.95,
+        "F1_native": 0.95,
+        "n_flagged": 20,
+        "duplicates_caught": 0
+      },
+      "stl_residual": {
+        "AP": 0.2556014062992283,
+        "P_at_20": 0.25,
+        "R_at_20": 0.25,
+        "F1_native": 0.21212121212121213,
+        "n_flagged": 112,
+        "duplicates_caught": 0
+      }
+    },
+    "recurring": {
+      "precision": 0.9880239520958084,
+      "recall": 1.0,
+      "f1": 0.9939759036144579,
+      "groups_found": 8,
+      "n_flagged": 334
+    },
+    "duplicate": {
+      "precision": 0.4,
+      "recall": 0.6666666666666666,
+      "f1": 0.5,
+      "n_flagged": 10,
+      "n_true": 6
+    },
+    "forecast": {
+      "seasonal_naive_lag12": {
+        "MAPE": 18.911280637650982,
+        "MAE": 2520.4650000000006
+      },
+      "naive_lag1": {
+        "MAPE": 26.253833880514403,
+        "MAE": 3572.5166666666664
+      },
+      "prophet": {
+        "MAPE": 15.790422480263944,
+        "MAE": 2152.3730736567763
+      },
+      "lightgbm": {
+        "MAPE": 17.078389779125594,
+        "MAE": 2360.253862182853
+      }
+    }
   }
 ]
