@@ -1,0 +1,110 @@
+[
+  {
+    "date": "2023-06-19",
+    "merchant": "TICKETMASTER",
+    "category": "entertainment",
+    "amount": -1320.0,
+    "is_true_anomaly": 1,
+    "iso_score": 0.2404,
+    "modz": 17.92
+  },
+  {
+    "date": "2024-02-08",
+    "merchant": "WIRE TRANSFER OUT",
+    "category": "other",
+    "amount": -3200.0,
+    "is_true_anomaly": 1,
+    "iso_score": 0.2386,
+    "modz": 45.14
+  },
+  {
+    "date": "2024-09-27",
+    "merchant": "EXPEDIA TRAVEL",
+    "category": "transport",
+    "amount": -1640.0,
+    "is_true_anomaly": 1,
+    "iso_score": 0.2319,
+    "modz": 22.55
+  },
+  {
+    "date": "2025-06-01",
+    "merchant": "BEST BUY",
+    "category": "shopping",
+    "amount": -2399.0,
+    "is_true_anomaly": 1,
+    "iso_score": 0.2272,
+    "modz": 33.54
+  },
+  {
+    "date": "2023-01-24",
+    "merchant": "OLIVE GARDEN",
+    "category": "dining",
+    "amount": -742.0,
+    "is_true_anomaly": 1,
+    "iso_score": 0.2168,
+    "modz": 9.55
+  },
+  {
+    "date": "2023-04-22",
+    "merchant": "QUEST DIAGNOSTICS",
+    "category": "health",
+    "amount": -1750.0,
+    "is_true_anomaly": 1,
+    "iso_score": 0.2164,
+    "modz": 24.14
+  },
+  {
+    "date": "2024-10-05",
+    "merchant": "DELTA AIR",
+    "category": "transport",
+    "amount": -1280.0,
+    "is_true_anomaly": 1,
+    "iso_score": 0.2147,
+    "modz": 17.34
+  },
+  {
+    "date": "2024-10-19",
+    "merchant": "APPLE STORE",
+    "category": "shopping",
+    "amount": -1899.0,
+    "is_true_anomaly": 1,
+    "iso_score": 0.2077,
+    "modz": 26.3
+  },
+  {
+    "date": "2025-11-12",
+    "merchant": "AMAZON.COM",
+    "category": "shopping",
+    "amount": -2050.0,
+    "is_true_anomaly": 1,
+    "iso_score": 0.2076,
+    "modz": 28.49
+  },
+  {
+    "date": "2025-07-19",
+    "merchant": "IKEA",
+    "category": "shopping",
+    "amount": -1730.0,
+    "is_true_anomaly": 1,
+    "iso_score": 0.1981,
+    "modz": 23.85
+  },
+  {
+    "date": "2024-04-14",
+    "merchant": "HOME DEPOT",
+    "category": "shopping",
+    "amount": -1450.0,
+    "is_true_anomaly": 1,
+    "iso_score": 0.1956,
+    "modz": 19.8
+  },
+  {
+    "date": "2025-11-10",
+    "merchant": "WHOLE FOODS MKT",
+    "category": "groceries",
+    "amount": -690.0,
+    "is_true_anomaly": 1,
+    "iso_score": 0.1903,
+    "modz": 8.79
+  }
+]
