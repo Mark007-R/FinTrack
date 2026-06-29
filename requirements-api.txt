@@ -1,0 +1,24 @@
+# FinTrack ML API (FastAPI) — Day-5 Phase-3 production service.
+# Powers api.py and the src/ champion components. Kept separate from the lean
+# Flask requirements.txt so the two services can be deployed independently.
+#
+#   pip install -r requirements-api.txt
+#   uvicorn api:app --port 8000
+
+# --- web service ---
+fastapi>=0.110
+uvicorn>=0.27
+pydantic>=2.5
+
+# --- ML / data stack (champion components) ---
+scikit-learn>=1.4      # TF-IDF + LinearSVC categorizer, IsolationForest anomaly
+numpy>=1.26
+scipy>=1.11
+joblib>=1.3            # loads models/expense_classifier.joblib
+lightgbm>=4.0          # cash-flow forecaster (GBT baseline)
+prophet>=1.1           # cash-flow forecast champion
+pdfplumber>=0.11       # PDF text backend for /extract (no hardcoded poppler path)
+
+# --- auth (Day-9 JWT multi-tenancy carries this forward) ---
+python-jose[cryptography]>=3.3
+passlib>=1.7

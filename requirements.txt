@@ -1,3 +1,5 @@
 Flask
 pymysql
 werkzeug
+pdfplumber
+numpy

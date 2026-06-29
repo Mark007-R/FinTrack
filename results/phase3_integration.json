@@ -1,0 +1,111 @@
+{
+  "day": 5,
+  "phase": "Phase 3 - champion integration + production refactor",
+  "components": {
+    "extraction": {
+      "n": 100,
+      "amount_acc": 0.58,
+      "date_acc": 0.87,
+      "merchant_nonnull": 0.94,
+      "delegation_signature_ok": true,
+      "day2_champion_amount_acc": 0.58,
+      "parity": true
+    },
+    "categorization": {
+      "n_test_heldout": 180,
+      "heldout_macro_f1": 0.9752,
+      "model_loaded": true,
+      "model_id": "tfidf_linsvc",
+      "predicts_valid_labels": true,
+      "day3_champion_macro_f1": 0.975,
+      "parity": true,
+      "note": "shipped model trained on all rows; metric is the held-out split from training"
+    },
+    "anomaly": {
+      "n_txns": 3054,
+      "n_true_anomalies": 20,
+      "precision_at_20": 0.95,
+      "recall_at_20": 0.95,
+      "recurring_groups_found": 8,
+      "duplicate_charges_found": 10,
+      "day4_champion_P_at_20": 0.95
+    },
+    "forecast": {
+      "method": "prophet",
+      "history_months": 36,
+      "next_month": {
+        "month": "2026-01",
+        "predicted_spend": 11672.2
+      },
+      "last_actual": 12758.46
+    },
+    "recommend": {
+      "steady_user": {
+        "balance": 6000.0,
+        "risk_profile": "balanced",
+        "risk_score": 0.562,
+        "top_option": "Balanced Index Fund"
+      },
+      "spiky_user": {
+        "balance": 24000.0,
+        "risk_profile": "balanced",
+        "risk_score": 0.525,
+        "top_option": "Balanced Index Fund"
+      },
+      "personalization_differs": true
+    },
+    "api": {
+      "all_endpoints_200": true,
+      "detail": {
+        "health": {
+          "status": "ok",
+          "categorizer_loaded": true,
+          "categorizer_model": "tfidf_linsvc"
+        },
+        "extract": [
+          200,
+          {
+            "amount": 23.9,
+            "date": "2018-03-12",
+            "merchant": "MY STORE SDN BHD",
+            "method": "rules_smart",
+            "confidence": 1.0
+          }
+        ],
+        "categorize": [
+          200,
+          {
+            "description": "NETFLIX.COM",
+            "category": "entertainment",
+            "confidence": 0.3067,
+            "model": "tfidf_linsvc"
+          }
+        ],
+        "anomaly": [
+          200,
+          {
+            "n_flagged": 3
+          }
+        ],
+        "forecast": [
+          200,
+          "seasonal_naive_lag12"
+        ],
+        "recommend": [
+          200,
+          {
+            "risk": "conservative",
+            "n_options": 0
+          }
+        ]
+      }
+    },
+    "multitenancy": {
+      "user_sees_only_own_rows": true,
+      "cross_user_delete_blocked": true,
+      "global_query_would_have_seen": 2,
+      "passes": true
+    }
+  },
+  "all_parity_ok": true
+}

@@ -57,11 +57,13 @@ def dashboard():
     if 'user_id' not in session:
         return redirect(url_for('login_bp.login'))
 
+    user_id = session['user_id']
+
     try:
         conn = get_db_connection()
         cursor = conn.cursor()
 
-        # Add new transaction
+        # Add new transaction — owned by the logged-in user.
         if request.method == 'POST':
             description = request.form.get('description')
             amount = request.form.get('amount')
@@ -69,25 +71,29 @@ def dashboard():
 
             if description and amount and date:
                 cursor.execute(
-                    "INSERT INTO transactions (description, amount, date) VALUES (%s, %s, %s)",
-                    (description, float(amount), date)
+                    "INSERT INTO transactions (user_id, description, amount, date) "
+                    "VALUES (%s, %s, %s, %s)",
+                    (user_id, description, float(amount), date)
                 )
                 conn.commit()
                 flash("Transaction added successfully!", "success")
             else:
                 flash("Please fill out all fields.", "warning")
 
-        # Handle deletion
+        # Handle deletion — scoped to this user so A cannot delete B's rows.
         delete_id = request.args.get('delete')
         if delete_id:
             cursor.execute(
-                "DELETE FROM transactions WHERE id = %s", (int(delete_id),))
+                "DELETE FROM transactions WHERE id = %s AND user_id = %s",
+                (int(delete_id), user_id))
             conn.commit()
             flash("Transaction deleted successfully!", "success")
             return redirect(url_for('dashboard'))
 
-        # Fetch transactions
-        cursor.execute("SELECT * FROM transactions ORDER BY date DESC")
+        # Fetch transactions — only this user's rows.
+        cursor.execute(
+            "SELECT * FROM transactions WHERE user_id = %s ORDER BY date DESC",
+            (user_id,))
         transactions = cursor.fetchall()
 
     except Exception as e:
