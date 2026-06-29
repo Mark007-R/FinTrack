@@ -1,0 +1,357 @@
+{
+  "extraction": [
+    {
+      "id": "0",
+      "amount": 193.0,
+      "date": "2019-01-15",
+      "merchant": "OJC MARKETING SDN BHD",
+      "method": "rules_smart",
+      "find_bill_details": [
+        -193.0,
+        "2019-01-15"
+      ]
+    },
+    {
+      "id": "1",
+      "amount": 170.0,
+      "date": "2019-01-02",
+      "merchant": "OJC MARKETING SDN BHD",
+      "method": "rules_smart",
+      "find_bill_details": [
+        -170.0,
+        "2019-01-02"
+      ]
+    },
+    {
+      "id": "2",
+      "amount": 411.5,
+      "date": "2018-02-09",
+      "merchant": "BANDAR BARU PERMAS JAYA",
+      "method": "rules_smart",
+      "find_bill_details": [
+        -411.5,
+        "2018-02-09"
+      ]
+    },
+    {
+      "id": "3",
+      "amount": 4.9,
+      "date": "2018-02-01",
+      "merchant": "PETRON BKT LANJAN SB ALSERKAM ENTERPRISE",
+      "method": "rules_smart",
+      "find_bill_details": [
+        -4.9,
+        "2018-02-01"
+      ]
+    },
+    {
+      "id": "4",
+      "amount": 2.2,
+      "date": "2018-01-18",
+      "merchant": null,
+      "method": "rules_smart",
+      "find_bill_details": [
+        -2.2,
+        "2018-01-18"
+      ]
+    },
+    {
+      "id": "5",
+      "amount": 6.89,
+      "date": "2018-02-05",
+      "merchant": "JALAN SIN LIANHAP SON BHD LOT",
+      "method": "rules_smart",
+      "find_bill_details": [
+        -6.89,
+        "2018-02-05"
+      ]
+    }
+  ],
+  "categorization": [
+    {
+      "description": "PLAYSTATION NTWK NEW YORK NY",
+      "true": "entertainment",
+      "pred": "entertainment",
+      "confidence": 0.397
+    },
+    {
+      "description": "ACH TICKETMASTER",
+      "true": "entertainment",
+      "pred": "entertainment",
+      "confidence": 0.4084
+    },
+    {
+      "description": "spotify seattle wa",
+      "true": "entertainment",
+      "pred": "entertainment",
+      "confidence": 0.4141
+    },
+    {
+      "description": "DEBIT CARD XBOX LIVE SEATTLE WA",
+      "true": "entertainment",
+      "pred": "entertainment",
+      "confidence": 0.3454
+    },
+    {
+      "description": "SPOTIFY 3138 ID",
+      "true": "entertainment",
+      "pred": "entertainment",
+      "confidence": 0.4185
+    },
+    {
+      "description": "amc theatres seattle wa",
+      "true": "entertainment",
+      "pred": "entertainment",
+      "confidence": 0.394
+    },
+    {
+      "description": "Disney Plus",
+      "true": "entertainment",
+      "pred": "entertainment",
+      "confidence": 0.4382
+    },
+    {
+      "description": "HBO MAX AUSTIN TX",
+      "true": "entertainment",
+      "pred": "entertainment",
+      "confidence": 0.3879
+    }
+  ],
+  "anomaly": {
+    "top_flags": [
+      {
+        "date": "2023-06-19",
+        "merchant": "TICKETMASTER",
+        "category": "entertainment",
+        "amount": -1320.0,
+        "score": 0.2404,
+        "is_anomaly": true,
+        "reason": "30.2x the entertainment median ($44)"
+      },
+      {
+        "date": "2024-02-08",
+        "merchant": "WIRE TRANSFER OUT",
+        "category": "other",
+        "amount": -3200.0,
+        "score": 0.2386,
+        "is_anomaly": true,
+        "reason": "24.6x the other median ($130)"
+      },
+      {
+        "date": "2024-09-27",
+        "merchant": "EXPEDIA TRAVEL",
+        "category": "transport",
+        "amount": -1640.0,
+        "score": 0.2319,
+        "is_anomaly": true,
+        "reason": "23.7x the transport median ($69)"
+      },
+      {
+        "date": "2025-06-01",
+        "merchant": "BEST BUY",
+        "category": "shopping",
+        "amount": -2399.0,
+        "score": 0.2272,
+        "is_anomaly": true,
+        "reason": "11.8x the shopping median ($204)"
+      },
+      {
+        "date": "2023-01-24",
+        "merchant": "OLIVE GARDEN",
+        "category": "dining",
+        "amount": -742.0,
+        "score": 0.2168,
+        "is_anomaly": true,
+        "reason": "14.8x the dining median ($50)"
+      },
+      {
+        "date": "2023-04-22",
+        "merchant": "QUEST DIAGNOSTICS",
+        "category": "health",
+        "amount": -1750.0,
+        "score": 0.2164,
+        "is_anomaly": true,
+        "reason": "11.6x the health median ($151)"
+      }
+    ],
+    "recurring_groups": [
+      {
+        "merchant": "RENT GREYSTAR PROPERTY",
+        "n": 36,
+        "median_gap_days": 31.0,
+        "amount_cv": 0.0,
+        "mean_amount": 1850.0
+      },
+      {
+        "merchant": "PAYROLL DEPOSIT ACME",
+        "n": 78,
+        "median_gap_days": 14.0,
+        "amount_cv": 0.0,
+        "mean_amount": 3200.0
+      },
+      {
+        "merchant": "VERIZON WIRELESS",
+        "n": 37,
+        "median_gap_days": 31.0,
+        "amount_cv": 0.0,
+        "mean_amount": 80.0
+      },
+      {
+        "merchant": "CON EDISON",
+        "n": 36,
+        "median_gap_days": 31.0,
+        "amount_cv": 0.059,
+        "mean_amount": 125.3
+      }
+    ],
+    "duplicate_charges": [
+      {
+        "merchant": "SAFEWAY",
+        "date": "2024-07-22",
+        "amount": -158.53,
+        "prior_date": "2024-07-21"
+      },
+      {
+        "merchant": "COSTCO WHSE",
+        "date": "2024-12-23",
+        "amount": -86.58,
+        "prior_date": "2024-12-22"
+      },
+      {
+        "merchant": "VERIZON WIRELESS",
+        "date": "2025-01-06",
+        "amount": -80.0,
+        "prior_date": "2025-01-05"
+      },
+      {
+        "merchant": "NETFLIX",
+        "date": "2023-06-13",
+        "amount": -15.99,
+        "prior_date": "2023-06-12"
+      }
+    ]
+  },
+  "forecast": {
+    "method": "prophet",
+    "history_months": 36,
+    "forecast": [
+      {
+        "month": "2026-01",
+        "predicted_spend": 11672.2
+      }
+    ],
+    "last_actual": 12758.46
+  },
+  "recommend": {
+    "steady": {
+      "total_balance": 6000.0,
+      "risk_profile": "balanced",
+      "risk_score": 0.562,
+      "options": [
+        {
+          "name": "Balanced Index Fund",
+          "type": "Bank Stock",
+          "min_investment": 2500.0,
+          "expected_return_pct": 11.0,
+          "risk": "medium",
+          "suitability": 0.7891
+        },
+        {
+          "name": "Investment-Grade Corporate Bond",
+          "type": "Bond",
+          "min_investment": 5000.0,
+          "expected_return_pct": 8.5,
+          "risk": "medium",
+          "suitability": 0.7263
+        },
+        {
+          "name": "12-Month Recurring Deposit",
+          "type": "Recurring Deposit",
+          "min_investment": 500.0,
+          "expected_return_pct": 6.5,
+          "risk": "low",
+          "suitability": 0.645
+        },
+        {
+          "name": "Government Savings Bond",
+          "type": "Bond",
+          "min_investment": 1000.0,
+          "expected_return_pct": 7.2,
+          "risk": "low",
+          "suitability": 0.6061
+        },
+        {
+          "name": "Bank Blue-Chip Equity",
+          "type": "Bank Stock",
+          "min_investment": 3000.0,
+          "expected_return_pct": 13.5,
+          "risk": "high",
+          "suitability": 0.5829
+        },
+        {
+          "name": "Whole Life Insurance Plan",
+          "type": "Life Insurance",
+          "min_investment": 1200.0,
+          "expected_return_pct": 5.0,
+          "risk": "low",
+          "suitability": 0.5663
+        }
+      ]
+    },
+    "spiky": {
+      "total_balance": 24000.0,
+      "risk_profile": "balanced",
+      "risk_score": 0.525,
+      "options": [
+        {
+          "name": "Balanced Index Fund",
+          "type": "Bank Stock",
+          "min_investment": 2500.0,
+          "expected_return_pct": 11.0,
+          "risk": "medium",
+          "suitability": 0.91
+        },
+        {
+          "name": "Investment-Grade Corporate Bond",
+          "type": "Bond",
+          "min_investment": 5000.0,
+          "expected_return_pct": 8.5,
+          "risk": "medium",
+          "suitability": 0.8176
+        },
+        {
+          "name": "Bank Blue-Chip Equity",
+          "type": "Bank Stock",
+          "min_investment": 3000.0,
+          "expected_return_pct": 13.5,
+          "risk": "high",
+          "suitability": 0.7007
+        },
+        {
+          "name": "Government Savings Bond",
+          "type": "Bond",
+          "min_investment": 1000.0,
+          "expected_return_pct": 7.2,
+          "risk": "low",
+          "suitability": 0.652
+        },
+        {
+          "name": "12-Month Recurring Deposit",
+          "type": "Recurring Deposit",
+          "min_investment": 500.0,
+          "expected_return_pct": 6.5,
+          "risk": "low",
+          "suitability": 0.645
+        },
+        {
+          "name": "Growth Equity Portfolio",
+          "type": "Bank Stock",
+          "min_investment": 7500.0,
+          "expected_return_pct": 16.0,
+          "risk": "high",
+          "suitability": 0.6391
+        }
+      ]
+    }
+  }
+}

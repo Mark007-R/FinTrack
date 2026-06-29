@@ -312,5 +312,20 @@
         "MAE": 2360.253862182853
       }
     }
+  },
+  {
+    "day": "day5_phase3",
+    "generated": "2026-06-29 12:13",
+    "phase": "Phase 3 - champion integration + production refactor",
+    "integration_parity": {
+      "extraction_amount_acc": 0.58,
+      "categorization_heldout_macro_f1": 0.9752,
+      "anomaly_P_at_20": 0.95,
+      "forecast_method": "prophet",
+      "recommend_personalization_differs": true,
+      "api_all_endpoints_200": true,
+      "multitenancy_passes": true
+    },
+    "all_parity_ok": true
   }
 ]

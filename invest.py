@@ -1,61 +1,97 @@
-from flask import Blueprint, render_template
-import mysql.connector
+"""Investment recommendation route.
+
+Day-5 fixes (audit findings):
+  * Multi-tenancy: the old query ``SELECT amount FROM transactions`` summed EVERY
+    user's money into one balance. It now filters by ``session['user_id']`` so each
+    user sees only their own balance.
+  * Personalization: the old logic just matched ``min_investment <= total_balance``.
+    It now derives a per-user risk profile from that user's own cash-flow signals
+    and ranks options by affordability x risk-fit (``src.reco.investments``).
+  * Connector consistency: switched from ``mysql.connector`` to ``pymysql`` (used
+    everywhere else in the app).
+
+The route signature/endpoint is unchanged so ``invest.html`` keeps working; the
+template additionally receives ``risk_profile`` / ``risk_score`` for display.
+"""
+from flask import Blueprint, render_template, session, redirect, url_for
 import os
+import pymysql
+
+from src.reco.investments import recommend_for_user, DEFAULT_CATALOG
 
 # Define Blueprint
 invest_bp = Blueprint('invest_bp', __name__)
 
 
-@invest_bp.route('/invest', methods=['GET', 'POST'], endpoint='invest')
-def invest():
-    conn = mysql.connector.connect(
+def get_db_connection():
+    return pymysql.connect(
         host=os.getenv('DB_SERVER', 'localhost'),
         user=os.getenv('DB_USER', 'root'),
         password=os.getenv('DB_PASS', 'pass123'),
-        database=os.getenv('DB_NAME', 'finase')
+        database=os.getenv('DB_NAME', 'finase'),
+        cursorclass=pymysql.cursors.DictCursor,
     )
-    cursor = conn.cursor(dictionary=True)
 
-    # Get total balance
-    cursor.execute("SELECT amount FROM transactions")
-    transactions = cursor.fetchall()
-    total_balance = sum(t['amount'] for t in transactions)
 
-    options = []
+def _load_catalog(cursor):
+    """Assemble the investment catalog from the DB tables, normalised to the
+    recommender's option shape. Falls back to a synthetic catalog if a table is
+    missing so the route never hard-fails in a demo environment."""
+    catalog = []
+    try:
+        cursor.execute("SELECT * FROM RecurringDeposits")
+        for r in cursor.fetchall():
+            catalog.append({"name": r.get("name") or "Recurring Deposit",
+                            "type": "Recurring Deposit",
+                            "min_investment": float(r.get("min_investment", 0) or 0),
+                            "expected_return_pct": float(r.get("interest_rate", 6.5) or 6.5),
+                            "risk": "low"})
+        cursor.execute("""SELECT b.*, bank.bank_name FROM Bonds b
+                          JOIN Banks bank ON b.bank_id = bank.bank_id""")
+        for r in cursor.fetchall():
+            catalog.append({"name": r.get("bank_name") or "Bond", "type": "Bond",
+                            "min_investment": float(r.get("minimum_investment", 0) or 0),
+                            "expected_return_pct": float(r.get("coupon_rate", 7.5) or 7.5),
+                            "risk": "low"})
+        cursor.execute("SELECT * FROM BankStockData")
+        for r in cursor.fetchall():
+            catalog.append({"name": r.get("BankName") or "Bank Stock", "type": "Bank Stock",
+                            "min_investment": float(r.get("CurrentPrice", 0) or 0),
+                            "expected_return_pct": 12.0, "risk": "high"})
+        cursor.execute("SELECT * FROM BankLifeInsurance")
+        for r in cursor.fetchall():
+            catalog.append({"name": r.get("plan_name") or "Life Insurance",
+                            "type": "Life Insurance",
+                            "min_investment": float(r.get("premium_range", 0) or 0),
+                            "expected_return_pct": 5.0, "risk": "low"})
+    except Exception:
+        pass
+    return catalog or DEFAULT_CATALOG
 
-    # Recurring Deposits
-    cursor.execute(
-        "SELECT * FROM RecurringDeposits WHERE min_investment <= %s", (total_balance,))
-    for row in cursor.fetchall():
-        row['type'] = 'Recurring Deposit'
-        options.append(row)
 
-    # Bonds with bank name
-    cursor.execute("""
-        SELECT b.*, bank.bank_name 
-        FROM Bonds b 
-        JOIN Banks bank ON b.bank_id = bank.bank_id 
-        WHERE b.minimum_investment <= %s
-    """, (total_balance,))
-    for row in cursor.fetchall():
-        row['type'] = 'Bond'
-        options.append(row)
+@invest_bp.route('/invest', methods=['GET', 'POST'], endpoint='invest')
+def invest():
+    if 'user_id' not in session:
+        return redirect(url_for('login_bp.login'))
+    user_id = session['user_id']
 
-    # Bank Stocks
-    cursor.execute(
-        "SELECT * FROM BankStockData WHERE CurrentPrice <= %s", (total_balance,))
-    for row in cursor.fetchall():
-        row['type'] = 'Bank Stock'
-        options.append(row)
+    conn = get_db_connection()
+    try:
+        cursor = conn.cursor()
+        # Per-user transactions only (multi-tenancy fix) — date is needed for the
+        # risk profile, so we pull the rows rather than just SUM(amount).
+        cursor.execute(
+            "SELECT amount, date FROM transactions WHERE user_id = %s", (user_id,))
+        txns = [{"amount": float(r["amount"]), "date": str(r.get("date"))}
+                for r in cursor.fetchall()]
+        catalog = _load_catalog(cursor)
+    finally:
+        cursor.close()
+        conn.close()
 
-    # Life Insurance
-    cursor.execute(
-        "SELECT * FROM BankLifeInsurance WHERE premium_range <= %s", (total_balance,))
-    for row in cursor.fetchall():
-        row['type'] = 'Life Insurance'
-        options.append(row)
-
-    cursor.close()
-    conn.close()
-
-    return render_template('invest.html', options=options, total_balance=total_balance)
+    rec = recommend_for_user(txns, catalog=catalog)
+    return render_template('invest.html',
+                           options=rec["options"],
+                           total_balance=rec["total_balance"],
+                           risk_profile=rec["risk_profile"],
+                           risk_score=rec["risk_score"])

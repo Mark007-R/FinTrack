@@ -1,14 +1,15 @@
 from flask import Blueprint, render_template, request, session, redirect, url_for
 import os
+import shutil
 import subprocess
-import re
-from datetime import datetime
+import tempfile
 import pymysql
+
+from src.extraction import extract_fields
 
 extract_bill_bp = Blueprint(
     'extract_bill_bp', __name__, template_folder='templates')
 
-import os
 DB_CONFIG = {
     'host': os.getenv('DB_SERVER'),
     'user': os.getenv('DB_USER'),
@@ -21,42 +22,70 @@ def get_db_connection():
     return pymysql.connect(**DB_CONFIG)
 
 
+def _resolve_pdftotext():
+    """Locate poppler's pdftotext without a machine-specific hardcoded path.
+
+    Resolution order:
+      1. POPPLER_PDFTOTEXT env var (explicit override),
+      2. a `pdftotext` binary already on PATH (Linux/macOS/Docker, or a Windows
+         install added to PATH).
+    Returns the executable path, or None if poppler is unavailable.
+    """
+    env = os.getenv('POPPLER_PDFTOTEXT')
+    if env and os.path.exists(env):
+        return env
+    return shutil.which('pdftotext')
+
+
 def extract_text_from_pdf(pdf_path):
-    desktop_path = os.path.expanduser('~/Desktop')
-    output_path = os.path.join(desktop_path, 'extracted_text.txt')
-    # poppler_path = r'C:\\xampp\\htdocs\\website\\poppler-24.07.0\\Library\\bin\\pdftotext.exe'
-    poppler_path = r'C:\poppler-24.07.0\Library\bin\pdftotext.exe'
+    """Extract text from a PDF, preferring the pure-Python pdfplumber backend
+    (cross-platform, no system binary) and falling back to poppler's pdftotext.
 
-    result = subprocess.run(
-        [poppler_path, pdf_path, output_path], capture_output=True, text=True)
+    The previous implementation hardcoded ``C:\\poppler-24.07.0\\...`` so it only
+    ran on one machine; this version is portable and Docker-friendly.
+    """
+    # Backend 1: pdfplumber (pure Python, no external binary).
+    try:
+        import pdfplumber
+        with pdfplumber.open(pdf_path) as pdf:
+            pages = [(page.extract_text() or '') for page in pdf.pages]
+        text = '\n'.join(pages).strip()
+        if text:
+            return text
+    except ImportError:
+        pass  # pdfplumber not installed -> try poppler
 
-    if result.returncode != 0:
-        raise Exception('Error extracting text from PDF: ' + result.stderr)
+    # Backend 2: poppler pdftotext, located dynamically (no hardcoded path).
+    pdftotext = _resolve_pdftotext()
+    if not pdftotext:
+        raise Exception(
+            'No PDF backend available. Install pdfplumber (pip install pdfplumber) '
+            'or set POPPLER_PDFTOTEXT to a pdftotext executable.')
 
-    if os.path.exists(output_path):
-        with open(output_path, 'r', encoding='utf-8') as f:
-            return f.read()
-    else:
-        raise Exception('Extracted text file not found.')
+    with tempfile.TemporaryDirectory() as tmp:
+        output_path = os.path.join(tmp, 'extracted_text.txt')
+        result = subprocess.run(
+            [pdftotext, pdf_path, output_path], capture_output=True, text=True)
+        if result.returncode != 0:
+            raise Exception('Error extracting text from PDF: ' + result.stderr)
+        if os.path.exists(output_path):
+            with open(output_path, 'r', encoding='utf-8') as f:
+                return f.read()
+    raise Exception('Extracted text file not found.')
 
 
 def find_bill_details(text):
-    amount_match = re.findall(r'\b\d+\.\d{2}\b', text)
-    date_match = re.findall(r'\b(\d{1,2}[\/.-]\d{1,2}[\/.-]\d{2,4})\b', text)
+    """Extract (signed_amount, bill_date) from receipt text.
 
-    amount = float(amount_match[0]) if amount_match else 0.0
-    date_str = date_match[0] if date_match else None
-
-    bill_date = 'Not found'
-    if date_str:
-        for fmt in ('%m/%d/%Y', '%d/%m/%Y', '%d-%m-%Y', '%Y-%m-%d'):
-            try:
-                bill_date = datetime.strptime(
-                    date_str, fmt).strftime('%Y-%m-%d')
-                break
-            except ValueError:
-                continue
-
+    Day-5 change: delegates to the Day-2 champion extractor (`rules_smart`,
+    amount-acc 0.58 / date-acc 0.87 vs the old regex's 0.15 / 0.49). The naive
+    first-decimal regex is retained inside the extractor purely as a fallback,
+    so the (amount, date) return signature is unchanged and the Flask route and
+    every caller keep working.
+    """
+    res = extract_fields(text)
+    amount = float(res.get('amount') or 0.0)
+    bill_date = res.get('date') or 'Not found'
     return -abs(amount), bill_date
 
 
@@ -87,12 +116,13 @@ def extract_bill():
                     bill_amount = amount
                     bill_date = date
 
-                    # Save to DB
+                    # Save to DB — scoped to the logged-in user (multi-tenancy fix).
                     conn = get_db_connection()
                     with conn.cursor() as cursor:
                         cursor.execute(
-                            "INSERT INTO transactions (description, amount, date) VALUES (%s, %s, %s)",
-                            ('Bill', amount, date)
+                            "INSERT INTO transactions (user_id, description, amount, date) "
+                            "VALUES (%s, %s, %s, %s)",
+                            (session['user_id'], 'Bill', amount, date)
                         )
                         conn.commit()
                     conn.close()
