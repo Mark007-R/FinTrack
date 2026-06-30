@@ -1,0 +1,22 @@
+description,true,pred,difficulty,gold_kw_present,competing_kw,tag
+amazon fresh seattle wa,groceries,shopping,overlap,False,shopping,multi_category_overlap
+instacart*wegmans,groceries,health,no_kw,False,,model_failure
+target t-1842 grocery,groceries,shopping,overlap,True,shopping,multi_category_overlap
+tst* shake shack,dining,shopping,no_kw,False,,model_failure
+wendys 5512,dining,health,no_kw,False,,model_failure
+sonic drive in #443,dining,health,no_kw,False,,model_failure
+costco gas #1043,transport,groceries,overlap,True,groceries,multi_category_overlap
+sunpass toll,transport,income,no_kw,False,,model_failure
+socalgas payment,utilities,other,no_kw,False,transport,model_failure
+wework membership,rent,transport,no_kw,False,,model_failure
+apple music subscription,entertainment,shopping,overlap,True,shopping,multi_category_overlap
+fandango,entertainment,other,no_kw,False,,model_failure
+equinox fitness,health,entertainment,no_kw,False,,model_failure
+h&m 0512 new york,shopping,groceries,no_kw,False,,model_failure
+lowes #01923,shopping,rent,no_kw,False,,model_failure
+nordstrom 0042,shopping,other,no_kw,False,,model_failure
+stripe transfer,income,other,no_kw,False,,model_failure
+robinhood ach,income,utilities,no_kw,False,,model_failure
+charity: water donation,other,utilities,no_kw,False,utilities,model_failure
+dmv vehicle reg,other,entertainment,no_kw,False,,model_failure
+city parking ticket,other,transport,overlap,False,transport,multi_category_overlap

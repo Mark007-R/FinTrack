@@ -1,0 +1,15 @@
+# 6 OOF categorizer failures (tuned model)
+# taxonomy: {'model_failure': 6}  dominant=model_failure
+
+[model_failure] 'ACH DIRECT DEP - ACME CORP #4138'
+    true=income  pred=utilities  gold_kw=False  competing=
+[model_failure] 'VERIZON WIRELESS'
+    true=utilities  pred=other  gold_kw=True  competing=
+[model_failure] 'LANDLORD ACH NEW YORK NY'
+    true=rent  pred=groceries  gold_kw=True  competing=
+[model_failure] 'Debit Card Walgreens Seattle Wa'
+    true=health  pred=groceries  gold_kw=False  competing=
+[model_failure] 'at&t'
+    true=utilities  pred=other  gold_kw=True  competing=
+[model_failure] 'ach landlord ach'
+    true=rent  pred=health  gold_kw=True  competing=
