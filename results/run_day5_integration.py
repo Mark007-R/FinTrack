@@ -105,7 +105,11 @@ def check_extraction():
         "n": n, "amount_acc": round(amt_ok / n, 4), "date_acc": round(date_ok / n, 4),
         "merchant_nonnull": round(merch_ok / n, 4),
         "delegation_signature_ok": deleg_ok == n,
-        "day2_champion_amount_acc": 0.58, "parity": abs(amt_ok / n - 0.58) < 0.02}
+        "day2_champion_amount_acc": 0.58,
+        # Day-6 raised the integrated extractor with the GST two-column rule
+        # (0.58 -> 0.83). Parity is now a no-regression FLOOR: never drop below the
+        # Day-2 champion. (It was an exact-match check before Day 6.)
+        "parity": (amt_ok / n) >= 0.58 - 0.02}
     samples["extraction"] = ex
     print(f"[1] extraction  amount_acc={amt_ok/n:.3f} (Day2=0.58)  date={date_ok/n:.3f}  "
           f"merchant_nonnull={merch_ok/n:.3f}  delegation_ok={deleg_ok==n}")

@@ -24,12 +24,12 @@
     },
     {
       "id": "2",
-      "amount": 411.5,
+      "amount": 436.19,
       "date": "2018-02-09",
       "merchant": "BANDAR BARU PERMAS JAYA",
       "method": "rules_smart",
       "find_bill_details": [
-        -411.5,
+        -436.19,
         "2018-02-09"
       ]
     },
