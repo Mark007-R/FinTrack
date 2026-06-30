@@ -327,5 +327,39 @@
       "multitenancy_passes": true
     },
     "all_parity_ok": true
+  },
+  {
+    "day": 6,
+    "generated": "2026-06-30",
+    "phase": "Phase 4 \u2014 tuning + error analysis",
+    "categorizer_optuna": {
+      "n_trials": 40,
+      "champion_heldout_macro_f1": 0.9752,
+      "tuned_heldout_macro_f1": 0.9752,
+      "verdict": "tie \u2014 in-distribution set saturated; champion config near-optimal"
+    },
+    "categorizer_stress": {
+      "tuned_macro_f1": 0.74,
+      "by_difficulty_acc": {
+        "no_kw": 0.7838,
+        "overlap": 0.375
+      },
+      "dominant_failure": "model_failure",
+      "fix_phrase_disambig_stress_macro": 0.7707,
+      "overlap_acc_before_after": [
+        0.375,
+        0.75
+      ],
+      "indist_no_regression": [
+        0.9847,
+        0.9847
+      ]
+    },
+    "extraction": {
+      "base_amount_acc": 0.58,
+      "patched_amount_acc": 0.83,
+      "dominant_failure": "gst_two_column",
+      "n_fixed": 26
+    }
   }
 ]

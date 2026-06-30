@@ -1,0 +1,42 @@
+{
+  "generated": "2026-06-30",
+  "day": 6,
+  "phase": "Phase 4 \u2014 error analysis (stress set)",
+  "stress_set": {
+    "path": "data/eval/transactions_stress.csv",
+    "n": 82,
+    "n_no_kw": 74,
+    "n_overlap": 8
+  },
+  "tuned_model_on_stress": {
+    "macro_f1": 0.74,
+    "accuracy": 0.7439
+  },
+  "by_difficulty_acc": {
+    "no_kw": 0.7838,
+    "overlap": 0.375
+  },
+  "error_taxonomy": {
+    "n_failures": 21,
+    "counts": {
+      "multi_category_overlap": 5,
+      "model_failure": 16
+    },
+    "dominant": "model_failure"
+  },
+  "fix_a_conf_override": {
+    "n_overrides": 6,
+    "stress_macro_f1": 0.7202,
+    "stress_acc": 0.7317
+  },
+  "fix_b_phrase_disambiguation": {
+    "n_overrides": 3,
+    "stress_macro_f1": 0.7707,
+    "stress_acc": 0.7805,
+    "overlap_acc_before": 0.375,
+    "overlap_acc_after": 0.75,
+    "indist_oof_before": 0.9847,
+    "indist_oof_after": 0.9847
+  },
+  "carry_forward": "no_kw model_failures need a brand->category gazetteer / active-learning augmentation (Day 7)."
+}

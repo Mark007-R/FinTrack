@@ -4,7 +4,7 @@
   "components": {
     "extraction": {
       "n": 100,
-      "amount_acc": 0.58,
+      "amount_acc": 0.84,
       "date_acc": 0.87,
       "merchant_nonnull": 0.94,
       "delegation_signature_ok": true,

@@ -1,0 +1,24 @@
+# 21 stress-set failures (tuned categorizer)
+# taxonomy {'multi_category_overlap': 5, 'model_failure': 16} dominant=model_failure
+
+[multi_category_overlap] 'amazon fresh seattle wa'  true=groceries pred=shopping diff=overlap gold_kw=False competing=shopping
+[model_failure] 'instacart*wegmans'  true=groceries pred=health diff=no_kw gold_kw=False competing=
+[multi_category_overlap] 'target t-1842 grocery'  true=groceries pred=shopping diff=overlap gold_kw=True competing=shopping
+[model_failure] 'tst* shake shack'  true=dining pred=shopping diff=no_kw gold_kw=False competing=
+[model_failure] 'wendys 5512'  true=dining pred=health diff=no_kw gold_kw=False competing=
+[model_failure] 'sonic drive in #443'  true=dining pred=health diff=no_kw gold_kw=False competing=
+[multi_category_overlap] 'costco gas #1043'  true=transport pred=groceries diff=overlap gold_kw=True competing=groceries
+[model_failure] 'sunpass toll'  true=transport pred=income diff=no_kw gold_kw=False competing=
+[model_failure] 'socalgas payment'  true=utilities pred=other diff=no_kw gold_kw=False competing=transport
+[model_failure] 'wework membership'  true=rent pred=transport diff=no_kw gold_kw=False competing=
+[multi_category_overlap] 'apple music subscription'  true=entertainment pred=shopping diff=overlap gold_kw=True competing=shopping
+[model_failure] 'fandango'  true=entertainment pred=other diff=no_kw gold_kw=False competing=
+[model_failure] 'equinox fitness'  true=health pred=entertainment diff=no_kw gold_kw=False competing=
+[model_failure] 'h&m 0512 new york'  true=shopping pred=groceries diff=no_kw gold_kw=False competing=
+[model_failure] 'lowes #01923'  true=shopping pred=rent diff=no_kw gold_kw=False competing=
+[model_failure] 'nordstrom 0042'  true=shopping pred=other diff=no_kw gold_kw=False competing=
+[model_failure] 'stripe transfer'  true=income pred=other diff=no_kw gold_kw=False competing=
+[model_failure] 'robinhood ach'  true=income pred=utilities diff=no_kw gold_kw=False competing=
+[model_failure] 'charity: water donation'  true=other pred=utilities diff=no_kw gold_kw=False competing=utilities
+[model_failure] 'dmv vehicle reg'  true=other pred=entertainment diff=no_kw gold_kw=False competing=
+[multi_category_overlap] 'city parking ticket'  true=other pred=transport diff=overlap gold_kw=False competing=transport

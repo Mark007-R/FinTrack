@@ -14,6 +14,9 @@ scikit-learn==1.9.0
 matplotlib==3.11.0
 pillow==12.2.0
 
+# --- Day 6: hyperparameter tuning + error analysis ---
+optuna==4.9.0            # TPE study for the categorizer tuning sweep
+
 # --- Day 4: anomaly detection + cash-flow forecasting ---
 statsmodels==0.14.6      # STL residual anomaly detection
 lightgbm==4.6.0          # gradient-boosted cash-flow forecaster
