@@ -1,0 +1,134 @@
+[
+  {
+    "lang": "de",
+    "merchant": "REWE MARKT GMBH",
+    "gt_total": "23.47",
+    "base_amount": 23.47,
+    "base_amount_ok": true,
+    "ml_amount": 23.47,
+    "ml_amount_ok": true,
+    "base_date_ok": false,
+    "ml_date_ok": true
+  },
+  {
+    "lang": "de",
+    "merchant": "MUELLER DROGERIE",
+    "gt_total": "14.90",
+    "base_amount": 20.0,
+    "base_amount_ok": false,
+    "ml_amount": 14.9,
+    "ml_amount_ok": true,
+    "base_date_ok": false,
+    "ml_date_ok": true
+  },
+  {
+    "lang": "de",
+    "merchant": "EDEKA SUEDWEST",
+    "gt_total": "51.08",
+    "base_amount": 51.08,
+    "base_amount_ok": true,
+    "ml_amount": 51.08,
+    "ml_amount_ok": true,
+    "base_date_ok": false,
+    "ml_date_ok": true
+  },
+  {
+    "lang": "de",
+    "merchant": "DM DROGERIEMARKT",
+    "gt_total": "8.75",
+    "base_amount": 8.75,
+    "base_amount_ok": true,
+    "ml_amount": 8.75,
+    "ml_amount_ok": true,
+    "base_date_ok": false,
+    "ml_date_ok": true
+  },
+  {
+    "lang": "de",
+    "merchant": "SATURN ELECTRO",
+    "gt_total": "199.00",
+    "base_amount": 199.0,
+    "base_amount_ok": true,
+    "ml_amount": 199.0,
+    "ml_amount_ok": true,
+    "base_date_ok": false,
+    "ml_date_ok": true
+  },
+  {
+    "lang": "es",
+    "merchant": "MERCADONA SA",
+    "gt_total": "37.62",
+    "base_amount": 37.62,
+    "base_amount_ok": true,
+    "ml_amount": 37.62,
+    "ml_amount_ok": true,
+    "base_date_ok": true,
+    "ml_date_ok": true
+  },
+  {
+    "lang": "es",
+    "merchant": "EL CORTE INGLES",
+    "gt_total": "89.99",
+    "base_amount": 89.99,
+    "base_amount_ok": true,
+    "ml_amount": 89.99,
+    "ml_amount_ok": true,
+    "base_date_ok": true,
+    "ml_date_ok": true
+  },
+  {
+    "lang": "es",
+    "merchant": "CARREFOUR EXPRESS",
+    "gt_total": "12.40",
+    "base_amount": 12.4,
+    "base_amount_ok": true,
+    "ml_amount": 12.4,
+    "ml_amount_ok": true,
+    "base_date_ok": true,
+    "ml_date_ok": true
+  },
+  {
+    "lang": "fr",
+    "merchant": "CARREFOUR CITY",
+    "gt_total": "26.83",
+    "base_amount": 26.83,
+    "base_amount_ok": true,
+    "ml_amount": 26.83,
+    "ml_amount_ok": true,
+    "base_date_ok": true,
+    "ml_date_ok": true
+  },
+  {
+    "lang": "fr",
+    "merchant": "FNAC DARTY",
+    "gt_total": "349.00",
+    "base_amount": 349.0,
+    "base_amount_ok": true,
+    "ml_amount": 349.0,
+    "ml_amount_ok": true,
+    "base_date_ok": true,
+    "ml_date_ok": true
+  },
+  {
+    "lang": "fr",
+    "merchant": "MONOPRIX SA",
+    "gt_total": "18.75",
+    "base_amount": 20.0,
+    "base_amount_ok": false,
+    "ml_amount": 18.75,
+    "ml_amount_ok": true,
+    "base_date_ok": true,
+    "ml_date_ok": true
+  },
+  {
+    "lang": "it",
+    "merchant": "ESSELUNGA SPA",
+    "gt_total": "42.10",
+    "base_amount": 42.1,
+    "base_amount_ok": true,
+    "ml_amount": 42.1,
+    "ml_amount_ok": true,
+    "base_date_ok": true,
+    "ml_date_ok": true
+  }
+]

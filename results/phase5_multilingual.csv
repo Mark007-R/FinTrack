@@ -1,0 +1,3 @@
+variant,amount_acc,date_acc,merchant_acc
+baseline,0.833,0.583,0.917
++gazetteer,1.0,1.0,0.917
