@@ -361,5 +361,61 @@
       "dominant_failure": "gst_two_column",
       "n_fixed": 26
     }
+  },
+  {
+    "day": 7,
+    "generated": "2026-07-01",
+    "phase": "Phase 5 - robustness + reach",
+    "ocr_robustness": {
+      "ocr_mode": "calibrated OCR-noise model (simulated)",
+      "n_receipts": 60,
+      "profiles": {
+        "gold_text": {
+          "amount_acc": 0.7167,
+          "date_acc": 0.8333,
+          "merchant_acc": 0.7167
+        },
+        "clean_scan": {
+          "amount_acc": 0.65,
+          "date_acc": 0.7333,
+          "merchant_acc": 0.7167
+        },
+        "phone_photo": {
+          "amount_acc": 0.5833,
+          "date_acc": 0.45,
+          "merchant_acc": 0.5
+        },
+        "faded": {
+          "amount_acc": 0.3333,
+          "date_acc": 0.3333,
+          "merchant_acc": 0.3833
+        },
+        "rotated": {
+          "amount_acc": 0.35,
+          "date_acc": 0.2167,
+          "merchant_acc": 0.2667
+        }
+      }
+    },
+    "active_learning": {
+      "seed_budget": 81,
+      "rounds": 6,
+      "batch": 32,
+      "hard_acc_seed": 0.5211,
+      "hard_acc_active_final": 0.8873,
+      "hard_acc_random_final": 0.6056,
+      "mean_batch_hard_frac_active": 0.469,
+      "mean_batch_hard_frac_random": 0.261,
+      "macro_f1_active_final": 0.9008,
+      "macro_f1_random_final": 0.7448
+    },
+    "rag": {
+      "n_queries": 22,
+      "slot_accuracy": 1.0,
+      "answer_acc_true_labels": 1.0,
+      "answer_acc_categorizer_oof_labels": 0.773,
+      "categorizer_oof_error_pct": 0.7,
+      "grounding_rate": 1.0
+    }
   }
 ]

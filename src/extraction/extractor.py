@@ -22,7 +22,15 @@ from typing import Optional
 
 AMT_RE = re.compile(r"\d[\d,]*\.\d{2}")
 TOTAL_KW = ["grand total", "total inclusive", "total incl", "amount due", "nett total",
-            "net total", "total amount", "total"]
+            "net total", "total amount", "total",
+            # Day-7 reach: multilingual total labels. English ones are matched first
+            # (they appear earlier in the list), so English receipts are unaffected;
+            # these only fire when no English anchor is present. German is the real
+            # gap — its total label ('Gesamtbetrag'/'Summe') shares no English token.
+            # Verified: 0/60 English SROIE receipts contain any of these.
+            "gesamtbetrag", "gesamtsumme", "gesamt", "endbetrag", "summe",
+            "importe total", "total a pagar", "montant total", "net a payer",
+            "importo totale", "totale"]
 NEG_KW = ["sub total", "subtotal", "sub-total", "change", "cash", "rounding", "discount", "tax"]
 
 
@@ -37,16 +45,19 @@ def _all_amounts(text: str):
 
 
 def _norm_date(s: str) -> Optional[str]:
+    # Day-7 finding: European receipts use dot-separated day-first dates
+    # (11.03.2024) that were silently unparseable before — only '/' and '-'
+    # formats were tried. Added %d.%m.%Y / %d.%m.%y (day-first, as EU receipts print).
     s = str(s).strip()
     for fmt in ("%d/%m/%Y", "%m/%d/%Y", "%d-%m-%Y", "%Y-%m-%d", "%d/%m/%y",
-                "%d %b %Y", "%d %B %Y"):
+                "%d.%m.%Y", "%d.%m.%y", "%d %b %Y", "%d %B %Y"):
         try:
             return datetime.strptime(s.split()[0] if " " in s else s, fmt).strftime("%Y-%m-%d")
         except Exception:
             continue
     m = re.search(r"\d{1,2}[\/\-.]\d{1,2}[\/\-.]\d{2,4}", s)
     if m:
-        for fmt in ("%d/%m/%Y", "%m/%d/%Y", "%d-%m-%Y", "%Y-%m-%d"):
+        for fmt in ("%d/%m/%Y", "%m/%d/%Y", "%d-%m-%Y", "%Y-%m-%d", "%d.%m.%Y", "%d.%m.%y"):
             try:
                 return datetime.strptime(m.group(), fmt).strftime("%Y-%m-%d")
             except Exception:
@@ -88,7 +99,10 @@ def _rules_smart(text: str) -> dict:
         amount = max(a for _, a in amts)
 
     date = None
-    dm = re.search(r"date[^0-9]{0,8}(\d{1,2}[\/\-.]\d{1,2}[\/\-.]\d{2,4})", low)
+    # Day-7 reach: anchor on English + German/Spanish date labels (French/Italian
+    # already use 'date'/'data'). These never appear before an English date, so
+    # English behaviour is unchanged.
+    dm = re.search(r"(?:date|datum|fecha|data)[^0-9]{0,8}(\d{1,2}[\/\-.]\d{1,2}[\/\-.]\d{2,4})", low)
     if dm:
         date = _norm_date(dm.group(1))
     if not date:
