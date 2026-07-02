@@ -1,0 +1,6 @@
+stage,macro_f1,accuracy,f1_in_dist,f1_novel,delta_vs_prev,delta_vs_keyword
+S1  keyword baseline,0.6429,0.52,0.7725,0.3408,0.0,0.0
+S2  + TF-IDF(word) + LinearSVC,0.7585,0.7,0.9866,0.2673,0.1156,0.1156
+S3  + char n-grams (word+char),0.6862,0.71,1.0,0.2945,-0.0723,0.0433
+S4  + Optuna-tuned params,0.6759,0.71,1.0,0.2418,-0.0103,0.033
+S5  + Day-6 disambig override,0.6759,0.71,1.0,0.2418,0.0,0.033

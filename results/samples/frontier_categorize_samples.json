@@ -1,0 +1,136 @@
+{
+  "per_class_f1_champion": {
+    "dining": 0.5263,
+    "entertainment": 0.8387,
+    "groceries": 0.7778,
+    "health": 0.5,
+    "income": 0.3333,
+    "other": 0.8333,
+    "rent": 0.9091,
+    "shopping": 0.7333,
+    "transport": 0.64,
+    "utilities": 0.6667
+  },
+  "samples": [
+    {
+      "description": "POS DEBIT SPOTIFY NEW YORK NY",
+      "gt": "entertainment",
+      "pred": "entertainment",
+      "ok": true
+    },
+    {
+      "description": "KAISER PERMANENTE STORE 4935",
+      "gt": "health",
+      "pred": "health",
+      "ok": true
+    },
+    {
+      "description": "TST* SPROUTS FARMERS MKT",
+      "gt": "groceries",
+      "pred": "groceries",
+      "ok": true
+    },
+    {
+      "description": "XCEL",
+      "gt": "utilities",
+      "pred": "transport",
+      "ok": false
+    },
+    {
+      "description": "GOODRX",
+      "gt": "health",
+      "pred": "health",
+      "ok": true
+    },
+    {
+      "description": "tst* lidl",
+      "gt": "groceries",
+      "pred": "utilities",
+      "ok": false
+    },
+    {
+      "description": "Wendys #759",
+      "gt": "dining",
+      "pred": "health",
+      "ok": false
+    },
+    {
+      "description": "UBER TRIP 679 ID",
+      "gt": "transport",
+      "pred": "transport",
+      "ok": true
+    },
+    {
+      "description": "DAVITA",
+      "gt": "health",
+      "pred": "transport",
+      "ok": false
+    },
+    {
+      "description": "OVERSTOCK",
+      "gt": "shopping",
+      "pred": "groceries",
+      "ok": false
+    },
+    {
+      "description": "MACY'S STORE 4249",
+      "gt": "shopping",
+      "pred": "shopping",
+      "ok": true
+    },
+    {
+      "description": "Tst* Mcdonald'S #3294",
+      "gt": "dining",
+      "pred": "dining",
+      "ok": true
+    },
+    {
+      "description": "Centurylink Store 674",
+      "gt": "utilities",
+      "pred": "groceries",
+      "ok": false
+    },
+    {
+      "description": "PURCHASE CITGO",
+      "gt": "transport",
+      "pred": "utilities",
+      "ok": false
+    },
+    {
+      "description": "purchase raising canes",
+      "gt": "dining",
+      "pred": "transport",
+      "ok": false
+    },
+    {
+      "description": "ACH CHEWY NEW YORK NY",
+      "gt": "shopping",
+      "pred": "groceries",
+      "ok": false
+    },
+    {
+      "description": "Sq *Xcel Store 7091",
+      "gt": "utilities",
+      "pred": "shopping",
+      "ok": false
+    },
+    {
+      "description": "LOWES",
+      "gt": "shopping",
+      "pred": "rent",
+      "ok": false
+    },
+    {
+      "description": "ACH TEMU STORE 2404",
+      "gt": "shopping",
+      "pred": "entertainment",
+      "ok": false
+    },
+    {
+      "description": "centurylink",
+      "gt": "utilities",
+      "pred": "other",
+      "ok": false
+    }
+  ]
+}

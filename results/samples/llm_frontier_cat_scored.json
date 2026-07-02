@@ -1,0 +1,707 @@
+{
+  "macro_f1": 1.0,
+  "f1_in_dist": 1.0,
+  "f1_novel": 1.0,
+  "detail": [
+    {
+      "id": 0,
+      "gt": "entertainment",
+      "pred": "entertainment",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 1,
+      "gt": "health",
+      "pred": "health",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 2,
+      "gt": "groceries",
+      "pred": "groceries",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 3,
+      "gt": "utilities",
+      "pred": "utilities",
+      "regime": "novel",
+      "ok": true
+    },
+    {
+      "id": 4,
+      "gt": "health",
+      "pred": "health",
+      "regime": "novel",
+      "ok": true
+    },
+    {
+      "id": 5,
+      "gt": "groceries",
+      "pred": "groceries",
+      "regime": "novel",
+      "ok": true
+    },
+    {
+      "id": 6,
+      "gt": "dining",
+      "pred": "dining",
+      "regime": "novel",
+      "ok": true
+    },
+    {
+      "id": 7,
+      "gt": "transport",
+      "pred": "transport",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 8,
+      "gt": "health",
+      "pred": "health",
+      "regime": "novel",
+      "ok": true
+    },
+    {
+      "id": 9,
+      "gt": "shopping",
+      "pred": "shopping",
+      "regime": "novel",
+      "ok": true
+    },
+    {
+      "id": 10,
+      "gt": "shopping",
+      "pred": "shopping",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 11,
+      "gt": "dining",
+      "pred": "dining",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 12,
+      "gt": "groceries",
+      "pred": "groceries",
+      "regime": "novel",
+      "ok": true
+    },
+    {
+      "id": 13,
+      "gt": "shopping",
+      "pred": "shopping",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 14,
+      "gt": "utilities",
+      "pred": "utilities",
+      "regime": "novel",
+      "ok": true
+    },
+    {
+      "id": 15,
+      "gt": "transport",
+      "pred": "transport",
+      "regime": "novel",
+      "ok": true
+    },
+    {
+      "id": 16,
+      "gt": "dining",
+      "pred": "dining",
+      "regime": "novel",
+      "ok": true
+    },
+    {
+      "id": 17,
+      "gt": "groceries",
+      "pred": "groceries",
+      "regime": "novel",
+      "ok": true
+    },
+    {
+      "id": 18,
+      "gt": "utilities",
+      "pred": "utilities",
+      "regime": "novel",
+      "ok": true
+    },
+    {
+      "id": 19,
+      "gt": "shopping",
+      "pred": "shopping",
+      "regime": "novel",
+      "ok": true
+    },
+    {
+      "id": 20,
+      "gt": "shopping",
+      "pred": "shopping",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 21,
+      "gt": "entertainment",
+      "pred": "entertainment",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 22,
+      "gt": "utilities",
+      "pred": "utilities",
+      "regime": "novel",
+      "ok": true
+    },
+    {
+      "id": 23,
+      "gt": "shopping",
+      "pred": "shopping",
+      "regime": "novel",
+      "ok": true
+    },
+    {
+      "id": 24,
+      "gt": "shopping",
+      "pred": "shopping",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 25,
+      "gt": "other",
+      "pred": "other",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 26,
+      "gt": "transport",
+      "pred": "transport",
+      "regime": "novel",
+      "ok": true
+    },
+    {
+      "id": 27,
+      "gt": "transport",
+      "pred": "transport",
+      "regime": "novel",
+      "ok": true
+    },
+    {
+      "id": 28,
+      "gt": "other",
+      "pred": "other",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 29,
+      "gt": "shopping",
+      "pred": "shopping",
+      "regime": "novel",
+      "ok": true
+    },
+    {
+      "id": 30,
+      "gt": "entertainment",
+      "pred": "entertainment",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 31,
+      "gt": "utilities",
+      "pred": "utilities",
+      "regime": "novel",
+      "ok": true
+    },
+    {
+      "id": 32,
+      "gt": "shopping",
+      "pred": "shopping",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 33,
+      "gt": "health",
+      "pred": "health",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 34,
+      "gt": "utilities",
+      "pred": "utilities",
+      "regime": "novel",
+      "ok": true
+    },
+    {
+      "id": 35,
+      "gt": "shopping",
+      "pred": "shopping",
+      "regime": "novel",
+      "ok": true
+    },
+    {
+      "id": 36,
+      "gt": "shopping",
+      "pred": "shopping",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 37,
+      "gt": "transport",
+      "pred": "transport",
+      "regime": "novel",
+      "ok": true
+    },
+    {
+      "id": 38,
+      "gt": "entertainment",
+      "pred": "entertainment",
+      "regime": "novel",
+      "ok": true
+    },
+    {
+      "id": 39,
+      "gt": "dining",
+      "pred": "dining",
+      "regime": "novel",
+      "ok": true
+    },
+    {
+      "id": 40,
+      "gt": "dining",
+      "pred": "dining",
+      "regime": "novel",
+      "ok": true
+    },
+    {
+      "id": 41,
+      "gt": "dining",
+      "pred": "dining",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 42,
+      "gt": "rent",
+      "pred": "rent",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 43,
+      "gt": "groceries",
+      "pred": "groceries",
+      "regime": "novel",
+      "ok": true
+    },
+    {
+      "id": 44,
+      "gt": "transport",
+      "pred": "transport",
+      "regime": "novel",
+      "ok": true
+    },
+    {
+      "id": 45,
+      "gt": "dining",
+      "pred": "dining",
+      "regime": "novel",
+      "ok": true
+    },
+    {
+      "id": 46,
+      "gt": "entertainment",
+      "pred": "entertainment",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 47,
+      "gt": "entertainment",
+      "pred": "entertainment",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 48,
+      "gt": "other",
+      "pred": "other",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 49,
+      "gt": "groceries",
+      "pred": "groceries",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 50,
+      "gt": "entertainment",
+      "pred": "entertainment",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 51,
+      "gt": "transport",
+      "pred": "transport",
+      "regime": "novel",
+      "ok": true
+    },
+    {
+      "id": 52,
+      "gt": "shopping",
+      "pred": "shopping",
+      "regime": "novel",
+      "ok": true
+    },
+    {
+      "id": 53,
+      "gt": "dining",
+      "pred": "dining",
+      "regime": "novel",
+      "ok": true
+    },
+    {
+      "id": 54,
+      "gt": "dining",
+      "pred": "dining",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 55,
+      "gt": "rent",
+      "pred": "rent",
+      "regime": "novel",
+      "ok": true
+    },
+    {
+      "id": 56,
+      "gt": "dining",
+      "pred": "dining",
+      "regime": "novel",
+      "ok": true
+    },
+    {
+      "id": 57,
+      "gt": "groceries",
+      "pred": "groceries",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 58,
+      "gt": "other",
+      "pred": "other",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 59,
+      "gt": "groceries",
+      "pred": "groceries",
+      "regime": "novel",
+      "ok": true
+    },
+    {
+      "id": 60,
+      "gt": "dining",
+      "pred": "dining",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 61,
+      "gt": "dining",
+      "pred": "dining",
+      "regime": "novel",
+      "ok": true
+    },
+    {
+      "id": 62,
+      "gt": "groceries",
+      "pred": "groceries",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 63,
+      "gt": "other",
+      "pred": "other",
+      "regime": "novel",
+      "ok": true
+    },
+    {
+      "id": 64,
+      "gt": "entertainment",
+      "pred": "entertainment",
+      "regime": "novel",
+      "ok": true
+    },
+    {
+      "id": 65,
+      "gt": "shopping",
+      "pred": "shopping",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 66,
+      "gt": "entertainment",
+      "pred": "entertainment",
+      "regime": "novel",
+      "ok": true
+    },
+    {
+      "id": 67,
+      "gt": "groceries",
+      "pred": "groceries",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 68,
+      "gt": "transport",
+      "pred": "transport",
+      "regime": "novel",
+      "ok": true
+    },
+    {
+      "id": 69,
+      "gt": "dining",
+      "pred": "dining",
+      "regime": "novel",
+      "ok": true
+    },
+    {
+      "id": 70,
+      "gt": "groceries",
+      "pred": "groceries",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 71,
+      "gt": "groceries",
+      "pred": "groceries",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 72,
+      "gt": "groceries",
+      "pred": "groceries",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 73,
+      "gt": "transport",
+      "pred": "transport",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 74,
+      "gt": "other",
+      "pred": "other",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 75,
+      "gt": "groceries",
+      "pred": "groceries",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 76,
+      "gt": "transport",
+      "pred": "transport",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 77,
+      "gt": "entertainment",
+      "pred": "entertainment",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 78,
+      "gt": "utilities",
+      "pred": "utilities",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 79,
+      "gt": "entertainment",
+      "pred": "entertainment",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 80,
+      "gt": "entertainment",
+      "pred": "entertainment",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 81,
+      "gt": "entertainment",
+      "pred": "entertainment",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 82,
+      "gt": "rent",
+      "pred": "rent",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 83,
+      "gt": "shopping",
+      "pred": "shopping",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 84,
+      "gt": "shopping",
+      "pred": "shopping",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 85,
+      "gt": "utilities",
+      "pred": "utilities",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 86,
+      "gt": "shopping",
+      "pred": "shopping",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 87,
+      "gt": "entertainment",
+      "pred": "entertainment",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 88,
+      "gt": "utilities",
+      "pred": "utilities",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 89,
+      "gt": "rent",
+      "pred": "rent",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 90,
+      "gt": "groceries",
+      "pred": "groceries",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 91,
+      "gt": "entertainment",
+      "pred": "entertainment",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 92,
+      "gt": "groceries",
+      "pred": "groceries",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 93,
+      "gt": "dining",
+      "pred": "dining",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 94,
+      "gt": "income",
+      "pred": "income",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 95,
+      "gt": "utilities",
+      "pred": "utilities",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 96,
+      "gt": "rent",
+      "pred": "rent",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 97,
+      "gt": "shopping",
+      "pred": "shopping",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 98,
+      "gt": "entertainment",
+      "pred": "entertainment",
+      "regime": "in_dist",
+      "ok": true
+    },
+    {
+      "id": 99,
+      "gt": "groceries",
+      "pred": "groceries",
+      "regime": "in_dist",
+      "ok": true
+    }
+  ]
+}

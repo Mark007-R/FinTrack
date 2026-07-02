@@ -1,0 +1,31 @@
+{
+  "model": "Claude Opus 4.8 (frontier), zero-shot, blind to ground truth",
+  "protocol": "shown only _llm_frontier_extract_blind.json (id + full OCR text); no GT. Amount rule: the labeled 'Total (Inclusive GST)' line; dates day-first; merchant = company line.",
+  "predictions": [
+    {"id": "f100", "amount": 91.16, "date": "2018-03-07", "merchant": "KEDAI PAPAN YEW CHUAN"},
+    {"id": "f101", "amount": 312.70, "date": "2018-03-08", "merchant": "KEDAI PAPAN YEW CHUAN"},
+    {"id": "f102", "amount": 135.68, "date": "2018-03-16", "merchant": "KEDAI PAPAN YEW CHUAN"},
+    {"id": "f103", "amount": 283.55, "date": "2018-03-12", "merchant": "KEDAI PAPAN YEW CHUAN"},
+    {"id": "f104", "amount": 270.30, "date": "2018-04-02", "merchant": "KEDAI PAPAN YEW CHUAN"},
+    {"id": "f105", "amount": 84.80, "date": "2018-03-10", "merchant": "KEDAI PAPAN YEW CHUAN"},
+    {"id": "f106", "amount": 5.50, "date": "2018-01-15", "merchant": "MYDIN SDN BHD"},
+    {"id": "f107", "amount": 65.70, "date": "2018-01-06", "merchant": "YONG CEN ENTERPRISE"},
+    {"id": "f108", "amount": 7.00, "date": "2018-02-01", "merchant": "MUN HENG ELECTRICAL & HARDWARE SUPPLY"},
+    {"id": "f110", "amount": 3.99, "date": "2018-03-31", "merchant": "99 SPEED MART"},
+    {"id": "f112", "amount": 308.70, "date": "2018-11-27", "merchant": "BEMED (SP) SDN BHD"},
+    {"id": "f113", "amount": 105.00, "date": "2018-03-21", "merchant": "PANA JAYA ENTERPRISE"},
+    {"id": "f115", "amount": 145.10, "date": "2018-03-12", "merchant": "SEGI CASH & CARRY SDN BHD"},
+    {"id": "f116", "amount": 4.00, "date": "2018-03-06", "merchant": "SWC ENTERPRISE SDN BHD"},
+    {"id": "f117", "amount": 9.95, "date": "2018-03-09", "merchant": "GUARDIAN HEALTH AND BEAUTY SDN BHD"},
+    {"id": "f118", "amount": 24.50, "date": "2017-09-12", "merchant": "TSH POWER HARDWARE TRADING"},
+    {"id": "f119", "amount": 6.60, "date": "2018-03-18", "merchant": "MR. D.I.Y. (M) SDN BHD"},
+    {"id": "f120", "amount": 21.50, "date": "2018-03-21", "merchant": "MR. D.I.Y. (M) SDN BHD"},
+    {"id": "f121", "amount": 6.20, "date": "2018-03-23", "merchant": "MR. D.I.Y. (M) SDN BHD"},
+    {"id": "f123", "amount": 65.70, "date": "2018-01-06", "merchant": "YONG CEN ENTERPRISE"},
+    {"id": "f124", "amount": 674.00, "date": "2018-01-06", "merchant": "SEGI CASH & CARRY SDN BHD"},
+    {"id": "f126", "amount": 205.50, "date": "2018-01-25", "merchant": "PANA JAYA ENTERPRISE"},
+    {"id": "f127", "amount": 98.89, "date": "2018-01-28", "merchant": "99 SPEED MART"},
+    {"id": "f128", "amount": 367.30, "date": "2018-02-18", "merchant": "GREAT ZONE HOUSEHOLD CENTRE SDN BHD"},
+    {"id": "f129", "amount": 4.10, "date": "2018-02-28", "merchant": "SAYANG YOU STATION SDN BHD"}
+  ]
+}
