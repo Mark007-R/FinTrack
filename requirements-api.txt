@@ -19,6 +19,8 @@ lightgbm>=4.0          # cash-flow forecaster (GBT baseline)
 prophet>=1.1           # cash-flow forecast champion
 pdfplumber>=0.11       # PDF text backend for /extract (no hardcoded poppler path)
 
-# --- auth (Day-9 JWT multi-tenancy carries this forward) ---
-python-jose[cryptography]>=3.3
-passlib>=1.7
+# --- auth + serving (Day-9 production wrapper) ---
+python-jose[cryptography]>=3.3   # JWT issue/verify (HS256)
+passlib>=1.7                     # pbkdf2_sha256 password hashing (no native build)
+python-multipart>=0.0.9          # OAuth2 form parsing for /auth/token
+redis>=5.0                       # result cache backend (in-process fallback if absent)

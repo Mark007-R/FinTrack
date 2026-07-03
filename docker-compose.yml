@@ -1,0 +1,32 @@
+# FinTrack ML API + Redis (Day-9 Phase-7 production stack).
+#
+#   docker compose up --build
+#   curl -s localhost:8000/health | jq
+#
+# The API auto-detects REDIS_URL; if the redis service is down it transparently
+# falls back to an in-process cache, so the API stays up either way.
+services:
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+
+  api:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      REDIS_URL: redis://redis:6379/0
+      FINTRACK_JWT_SECRET: ${FINTRACK_JWT_SECRET:-dev-secret-change-me-in-prod}
+      FINTRACK_JWT_TTL_MIN: "60"
+      FINTRACK_CACHE_TTL: "3600"
+    depends_on:
+      redis:
+        condition: service_healthy

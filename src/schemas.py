@@ -52,7 +52,8 @@ class Txn(BaseModel):
 
 
 class AnomalyRequest(BaseModel):
-    transactions: list[Txn] = Field(..., min_length=1)
+    transactions: list[Txn] = Field(default_factory=list,
+                                    description="Transactions to scan; if empty, the caller's stored transactions are used.")
     top_k: Optional[int] = Field(None, description="If set, only return the top-k most anomalous.")
 
 
@@ -78,7 +79,8 @@ class AnomalyResult(BaseModel):
 # forecast
 # --------------------------------------------------------------------------- #
 class ForecastRequest(BaseModel):
-    transactions: list[Txn] = Field(..., min_length=1)
+    transactions: list[Txn] = Field(default_factory=list,
+                                    description="Transactions to forecast from; if empty, the caller's stored transactions are used.")
     horizon_months: int = Field(1, ge=1, le=12)
 
 
@@ -112,3 +114,33 @@ class RecommendResult(BaseModel):
     risk_profile: str
     risk_score: float
     options: list[InvestmentOption]
+
+
+# --------------------------------------------------------------------------- #
+# auth + per-user transactions (Day-9 multi-tenancy)
+# --------------------------------------------------------------------------- #
+class RegisterRequest(BaseModel):
+    username: str = Field(..., min_length=3, max_length=64)
+    password: str = Field(..., min_length=6, max_length=128)
+
+
+class TokenResponse(BaseModel):
+    access_token: str
+    token_type: str = "bearer"
+    user_id: int
+    username: str
+
+
+class AddTransactionsRequest(BaseModel):
+    transactions: list[Txn] = Field(..., min_length=1,
+                                     description="Transactions to store for the authenticated user.")
+
+
+class TransactionRow(Txn):
+    id: int
+
+
+class TransactionsResponse(BaseModel):
+    user_id: int
+    n_transactions: int
+    transactions: list[TransactionRow]
