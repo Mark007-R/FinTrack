@@ -10,3 +10,5 @@ models/
 *.pt
 *.bin
 .DS_Store
+logs/
+mlruns/
