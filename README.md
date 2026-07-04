@@ -1,5 +1,7 @@
 # FinTrack — Document-AI Personal Finance Manager
 
+**🔗 Live demo:** https://iambatman07-fintrack.hf.space
+
 FinTrack started as a Flask personal-finance app whose "smart bill scanner" was a
 one-line regex and whose multi-tenancy was **broken** — every user could see and
 delete every other user's transactions. This repo is a 10-day production upgrade
