@@ -9,6 +9,7 @@ signup_bp = Blueprint('signup_bp', __name__)
 def get_db_connection():
     return pymysql.connect(
         host=os.getenv('DB_SERVER'),
+        port=int(os.getenv('DB_PORT', '3306')),
         user=os.getenv('DB_USER'),
         password=os.getenv('DB_PASS'),
         database=os.getenv('DB_NAME'),
@@ -33,6 +34,7 @@ def signup():
         if '@' not in email or '.' not in email:
             return jsonify({'success': False, 'message': 'Invalid email format'})
 
+        conn = None
         try:
             conn = get_db_connection()
             with conn.cursor() as cursor:
@@ -52,6 +54,7 @@ def signup():
             print("Signup error:", str(e))
             return jsonify({'success': False, 'message': str(e)})
         finally:
-            conn.close()
+            if conn is not None:
+                conn.close()
 
     return render_template('signup.html')

@@ -12,6 +12,16 @@ from extract_bill import extract_bill_bp
 app = Flask(__name__)
 app.secret_key = os.getenv('SECRET_KEY', 'your-secret-key')
 
+# The app is often embedded in a cross-site iframe (e.g. the Hugging Face Space
+# page). A default SameSite=Lax session cookie is dropped in that third-party
+# context, so after login the redirect to '/' arrives with no session and bounces
+# back to the login page. SameSite=None + Secure lets the cookie ride inside the
+# HTTPS iframe. (Harmless when the app is opened directly, first-party.)
+app.config.update(
+    SESSION_COOKIE_SAMESITE='None',
+    SESSION_COOKIE_SECURE=True,
+)
+
 # Register Blueprints
 app.register_blueprint(login_bp)
 app.register_blueprint(signup_bp)
@@ -20,6 +30,7 @@ app.register_blueprint(extract_bill_bp)
 
 # Database configuration
 DB_HOST = os.getenv('DB_SERVER')
+DB_PORT = int(os.getenv('DB_PORT', '3306'))  # cloud MySQL (e.g. Railway) uses a non-3306 public port
 DB_USER = os.getenv('DB_USER')
 DB_PASSWORD = os.getenv('DB_PASS')
 DB_NAME = os.getenv('DB_NAME')
@@ -28,6 +39,7 @@ DB_NAME = os.getenv('DB_NAME')
 def get_db_connection():
     return pymysql.connect(
         host=DB_HOST,
+        port=DB_PORT,
         user=DB_USER,
         password=DB_PASSWORD,
         db=DB_NAME,

@@ -9,6 +9,7 @@ login_bp = Blueprint('login_bp', __name__)
 def get_db_connection():
     return pymysql.connect(
         host=os.getenv('DB_SERVER'),
+        port=int(os.getenv('DB_PORT', '3306')),
         user=os.getenv('DB_USER'),
         password=os.getenv('DB_PASS'),
         database=os.getenv('DB_NAME'),
@@ -28,6 +29,7 @@ def login():
         if '@' not in email or '.' not in email:
             return jsonify({'success': False, 'message': 'Invalid email format'})
 
+        conn = None
         try:
             conn = get_db_connection()
             with conn.cursor() as cursor:
@@ -48,7 +50,8 @@ def login():
         except Exception as e:
             return jsonify({'success': False, 'message': f"Error: {str(e)}"})
         finally:
-            conn.close()
+            if conn is not None:
+                conn.close()
 
     # GET method
     return render_template('login.html')

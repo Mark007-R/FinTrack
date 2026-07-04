@@ -26,6 +26,7 @@ invest_bp = Blueprint('invest_bp', __name__)
 def get_db_connection():
     return pymysql.connect(
         host=os.getenv('DB_SERVER', 'localhost'),
+        port=int(os.getenv('DB_PORT', '3306')),
         user=os.getenv('DB_USER', 'root'),
         password=os.getenv('DB_PASS', 'pass123'),
         database=os.getenv('DB_NAME', 'finase'),
