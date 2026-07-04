@@ -12,3 +12,4 @@ models/
 .DS_Store
 logs/
 mlruns/
+.pytest_cache/
