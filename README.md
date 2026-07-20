@@ -1,8 +1,8 @@
-# FinTrack — Document-AI Personal Finance Manager
+# AI-Personal-Finance-Manager
 
 **🔗 Live demo:** https://iambatman07-fintrack.hf.space
 
-FinTrack started as a Flask personal-finance app whose "smart bill scanner" was a
+AI-Personal-Finance-Manager started as a Flask personal-finance app whose "smart bill scanner" was a
 one-line regex and whose multi-tenancy was **broken** — every user could see and
 delete every other user's transactions. This repo is a 10-day production upgrade
 that turned it into a **measured, multi-tenant ML service**: a real receipt
@@ -71,7 +71,7 @@ card: [`docs/MODEL_CARD.md`](docs/MODEL_CARD.md).
 On a held-out set of **novel merchants**, the $0 categorizer collapses to
 **macro-F1 0.24** while the LLM holds **1.00** — TF-IDF memorizes training
 vocabulary. The specialized model wins on cost/latency/consistency *in
-distribution*; the LLM wins zero-shot on the long tail. FinTrack ships the cheap
+distribution*; the LLM wins zero-shot on the long tail. AI-Personal-Finance-Manager ships the cheap
 model as default and routes low-confidence rows to the LLM + an active-learning
 review queue (Day-7). See [`results/frontier_comparison.csv`](results/frontier_comparison.csv).
 
