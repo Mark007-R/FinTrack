@@ -1,6 +1,6 @@
 # AI-Personal-Finance-Manager
 
-**🔗 Live demo:** https://iambatman07-fintrack.hf.space
+**🔗 Live demo:** https://iambatman07-ai-personal-finance-manager.hf.space
 
 AI-Personal-Finance-Manager started as a Flask personal-finance app whose "smart bill scanner" was a
 one-line regex and whose multi-tenancy was **broken** — every user could see and
