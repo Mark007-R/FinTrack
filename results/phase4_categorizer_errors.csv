@@ -1,7 +1,0 @@
-id,description,true,pred,gold_kw_present,competing_kw,tag
-88,ACH DIRECT DEP - ACME CORP #4138,income,utilities,False,,model_failure
-99,VERIZON WIRELESS,utilities,other,True,,model_failure
-124,LANDLORD ACH NEW YORK NY,rent,groceries,True,,model_failure
-132,Debit Card Walgreens Seattle Wa,health,groceries,False,,model_failure
-168,at&t,utilities,other,True,,model_failure
-189,ach landlord ach,rent,health,True,,model_failure
