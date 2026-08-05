@@ -1,7 +1,0 @@
-component,method,n,amount_acc,date_acc,merchant_acc,exact_amt_date,macro_f1,accuracy,f1_in_dist,f1_novel,sec_per_doc,usd_per_1k_docs
-extraction,regex (Day-1 baseline),50,0.18,0.78,0.0,0.12,,,,,0.0002,0.0
-extraction,"rules_smart (champion, local CPU)",50,0.8,0.8,0.48,0.62,,,,,0.00018,0.0
-extraction,"llm_zeroshot (Claude Opus 4.8, OCR text)",25,0.96,1.0,0.96,0.96,,,,,2.1,3.3
-categorization,keyword (Day-1 baseline),100,,,,,0.6429,0.52,0.7725,0.3408,0.0,0.0
-categorization,"tfidf_linsvc (champion, local CPU)",100,,,,,0.6759,0.71,1.0,0.2418,4.6e-05,0.0
-categorization,llm_zeroshot (Claude Opus 4.8),100,,,,,1.0,1.0,1.0,1.0,0.9,0.14
