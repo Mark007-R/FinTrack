@@ -32,7 +32,7 @@ amount = float(amount_match[0]) if amount_match else 0.0   # line 47 — takes t
 | Merchant | **0%** (not extracted) |
 | Exact match (amount **and** date) | **7%** |
 
-Concrete failures (`results/samples/extraction_baseline_samples.json`):
+Concrete failures (field accuracies in `results/baseline_metrics.json`):
 - grabbed `3.50` (a line item) instead of the `436.20` total;
 - grabbed `2.00` instead of `7.30`;
 - read `09/02` as Feb 9 instead of Sept 2 (day/month swap).
