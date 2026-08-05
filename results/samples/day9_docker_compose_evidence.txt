@@ -1,8 +1,0 @@
-# Day-9 live docker compose stack evidence (Fri Jul  3 13:39:14 IST 2026)
-## /health
-{"status":"ok","version":"0.9.0","categorizer_loaded":true,"categorizer_model":"tfidf_linsvc","cache_backend":"redis"}
-## /metrics
-{"telemetry":{"n_requests":8,"errors":0,"cache_hits":1,"latency_ms_p50":0.531,"latency_ms_p95":10.403,"latency_ms_max":1434.373,"requests_by_path":{"/health":4,"/auth/register":1,"/extract":2,"/metrics":1}},"cache":{"backend":"redis","hits":1,"misses":1,"hit_rate":0.5}}
-## container status
-fintrack-api-1 Up 16 seconds (healthy)
-fintrack-redis-1 Up 27 seconds (healthy)
