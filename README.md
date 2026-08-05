@@ -26,7 +26,7 @@ JWT-scoped FastAPI service, and covered by 66 tests.
 | 4 | **No expense categorizer at all** — `description` is untyped free text | — (missing) | Day 3 |
 | 5 | `invest()` sums **all users'** money into one balance; rule-match, no personalization | `invest.py` | Day 5 |
 
-Full write-up: [`docs/COMPONENT_AUDIT.md`](docs/COMPONENT_AUDIT.md).
+
 
 ## Headline results
 
@@ -52,7 +52,7 @@ as a low-confidence fallback for novel layouts, not the default.
 | Claude Opus zero-shot (frontier) | 1.00 | 1.00 | — | ~$0.14 |
 
 Champion = **98% of DistilBERT's F1 at 1/900th the train time, $0 inference**. Model
-card: [`docs/MODEL_CARD.md`](docs/MODEL_CARD.md).
+
 
 ### Anomaly / recurring / forecast (Day-4)
 
@@ -73,7 +73,7 @@ On a held-out set of **novel merchants**, the $0 categorizer collapses to
 vocabulary. The specialized model wins on cost/latency/consistency *in
 distribution*; the LLM wins zero-shot on the long tail. AI-Personal-Finance-Manager ships the cheap
 model as default and routes low-confidence rows to the LLM + an active-learning
-review queue (Day-7). See [`results/frontier_comparison.csv`](results/frontier_comparison.csv).
+review queue (Day-7).
 
 ## Architecture
 
@@ -142,9 +142,7 @@ src/            extraction · categorization · anomaly · forecast · reco · s
 api.py          async FastAPI ML service (JWT, cache, telemetry)
 app.py          original Flask app (now user_id-scoped)
 dashboard/      Streamlit ops dashboard
-results/        every experiment's runnable script + CSV + charts + samples/
-reports/        day01–day10 daily research reports
-docs/           COMPONENT_AUDIT.md · MODEL_CARD.md
+results/        every experiment's runnable script (metrics regenerate on run)
 tests/          66 pytest tests
 ```
 
